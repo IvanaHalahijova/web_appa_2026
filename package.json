@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "validate-links": "node scripts/link_and_validate.js"
+    "validate-links": "node scripts/link_and_validate.js",
+    "optimize-images": "node scripts/optimize_images.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }
