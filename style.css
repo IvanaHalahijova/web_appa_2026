@@ -588,3 +588,23 @@ body.dark-theme .portfolio-page-nav {
     transform: scale(1.02);
     filter: brightness(1.05);
 }
+/* Vyhľadávanie */
+.search-results-container {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 0.25rem;
+}
+
+.search-result-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-result-item a {
+    display: block;
+    padding: 0.5rem 0;
+}

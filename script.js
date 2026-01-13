@@ -65,17 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // ---------------------------------------------
-    // Vyhľadávanie — zatiaľ placeholder (alert)
-    // ---------------------------------------------
-    const searchToggle = document.querySelector(".search-toggle");
-    if (searchToggle) {
-        searchToggle.addEventListener("click", (e) => {
-            e.preventDefault();
-            alert("Vyhľadávanie zatiaľ nie je implementované 🙂");
-        });
-    }
-
     // Vynútiť tmavú tému pre celú stránku (bez prepínania) — nechcem prepínať
     const body = document.body;
     // Poznámka: vždy pridávam triedu dark-theme
