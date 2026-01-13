@@ -1,0 +1,8 @@
+{
+  "name": "appa-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate-links": "node scripts/link_and_validate.js"
+  }
+}

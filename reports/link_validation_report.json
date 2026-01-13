@@ -1,0 +1,800 @@
+{
+  "scannedFiles": 3,
+  "files": [
+    {
+      "file": "gdpr.html",
+      "hrefs": [
+        {
+          "link": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "style.css",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\style.css"
+        },
+        {
+          "link": "index.html#home",
+          "ok": true,
+          "fragment": "home",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "index.html#home",
+          "ok": true,
+          "fragment": "home",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "index.html#onas",
+          "ok": true,
+          "fragment": "onas",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "portfolio.html",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\portfolio.html"
+        },
+        {
+          "link": "index.html#kontakt",
+          "ok": true,
+          "fragment": "kontakt",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "https://www.facebook.com/profile.php?id=61575410834240",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://instagram.com/atelier_appa",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://www.youtube.com/@Ateli%C3%A9rAPPA",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "index.html#kontakt",
+          "ok": true,
+          "fragment": "kontakt",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "gdpr.html#cookies",
+          "ok": true,
+          "fragment": "cookies",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\gdpr.html",
+          "fragmentFound": true
+        }
+      ],
+      "srcs": [
+        {
+          "src": "script.js",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\script.js"
+        },
+        {
+          "src": "img/appa_logo.png",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\img\\appa_logo.png"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js",
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      ],
+      "ids": [
+        "navbarNav",
+        "gdpr-text",
+        "cookies",
+        "cookie-banner",
+        "accept-cookies",
+        "decline-cookies"
+      ],
+      "htmlValidation": {
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 4,
+            "lastColumn": 28,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "head>\n    <meta charset=\"UTF-8\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 24
+          },
+          {
+            "type": "info",
+            "lastLine": 5,
+            "lastColumn": 76,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 72
+          },
+          {
+            "type": "info",
+            "lastLine": 7,
+            "lastColumn": 108,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "itle>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 104
+          },
+          {
+            "type": "info",
+            "lastLine": 9,
+            "lastColumn": 46,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "eet\">\n    <link rel=\"stylesheet\" href=\"style.css\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 42
+          },
+          {
+            "type": "info",
+            "lastLine": 40,
+            "lastColumn": 81,
+            "firstColumn": 17,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"img/appa_logo.png\" alt=\"APPA logo\" class=\"logo me-2\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 65
+          }
+        ],
+        "url": null
+      }
+    },
+    {
+      "file": "index.html",
+      "hrefs": [
+        {
+          "link": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "style.css",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\style.css"
+        },
+        {
+          "link": "#home",
+          "ok": true,
+          "fragment": "home",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "#home",
+          "ok": true,
+          "fragment": "home",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "#onas",
+          "ok": true,
+          "fragment": "onas",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "portfolio.html",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\portfolio.html"
+        },
+        {
+          "link": "#kontakt",
+          "ok": true,
+          "fragment": "kontakt",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "https://www.facebook.com/profile.php?id=61575410834240",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://instagram.com/atelier_appa",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://www.youtube.com/@Ateli%C3%A9rAPPA",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "#kontakt",
+          "ok": true,
+          "fragment": "kontakt",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "#portfolio",
+          "ok": true,
+          "fragment": "portfolio",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "#onas",
+          "ok": true,
+          "fragment": "onas",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "portfolio.html",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\portfolio.html"
+        },
+        {
+          "link": "portfolio.html",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\portfolio.html"
+        },
+        {
+          "link": "portfolio.html",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\portfolio.html"
+        },
+        {
+          "link": "gdpr.html#gdpr-text",
+          "ok": true,
+          "fragment": "gdpr-text",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\gdpr.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "gdpr.html#cookies",
+          "ok": true,
+          "fragment": "cookies",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\gdpr.html",
+          "fragmentFound": true
+        }
+      ],
+      "srcs": [
+        {
+          "src": "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "script.js",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\script.js"
+        },
+        {
+          "src": "img/appa_logo.png",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\img\\appa_logo.png"
+        },
+        {
+          "src": "img/onas.jpeg",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\img\\onas.jpeg"
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+1",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+2",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+3",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+4",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+1",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+2",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+3",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/150x80/000000/ffffff?text=Partner+4",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js",
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      ],
+      "ids": [
+        "navbarNav",
+        "home",
+        "heroCarousel",
+        "onas",
+        "portfolio",
+        "spolupraca",
+        "kontakt",
+        "contactForm",
+        "suhlas",
+        "cookie-banner",
+        "accept-cookies",
+        "decline-cookies"
+      ],
+      "htmlValidation": {
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 4,
+            "lastColumn": 28,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "head>\n    <meta charset=\"UTF-8\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 24
+          },
+          {
+            "type": "info",
+            "lastLine": 5,
+            "lastColumn": 76,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 72
+          },
+          {
+            "type": "info",
+            "lastLine": 7,
+            "lastColumn": 108,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "itle>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 104
+          },
+          {
+            "type": "info",
+            "lastLine": 8,
+            "lastColumn": 113,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "t\" />\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css\" rel=\"stylesheet\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 109
+          },
+          {
+            "type": "info",
+            "lastLine": 9,
+            "lastColumn": 46,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "t\" />\n    <link rel=\"stylesheet\" href=\"style.css\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 42
+          },
+          {
+            "type": "info",
+            "lastLine": 20,
+            "lastColumn": 76,
+            "firstColumn": 17,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"img/appa_logo.png\" alt=\"APPA logo\" class=\"logo\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 60
+          },
+          {
+            "type": "info",
+            "lastLine": 73,
+            "lastColumn": 104,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"img/onas.jpeg\" class=\"img-fluid rounded-4 shadow about-img\" alt=\"O nás\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 84
+          },
+          {
+            "type": "info",
+            "lastLine": 115,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+1\" alt=\"Logo 1\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 116,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+2\" alt=\"Logo 2\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 117,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+3\" alt=\"Logo 3\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 118,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+4\" alt=\"Logo 4\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 119,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+1\" alt=\"Logo 1\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 120,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+2\" alt=\"Logo 2\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 121,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+3\" alt=\"Logo 3\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 122,
+            "lastColumn": 103,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"https://placehold.co/150x80/000000/ffffff?text=Partner+4\" alt=\"Logo 4\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 83
+          },
+          {
+            "type": "info",
+            "lastLine": 155,
+            "lastColumn": 98,
+            "firstColumn": 29,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <input class=\"custom-checkbox\" type=\"checkbox\" id=\"suhlas\" required />\n   ",
+            "hiliteStart": 10,
+            "hiliteLength": 70
+          }
+        ],
+        "url": null
+      }
+    },
+    {
+      "file": "portfolio.html",
+      "hrefs": [
+        {
+          "link": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "style.css",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\style.css"
+        },
+        {
+          "link": "index.html#home",
+          "ok": true,
+          "fragment": "home",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "index.html#home",
+          "ok": true,
+          "fragment": "home",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "index.html#onas",
+          "ok": true,
+          "fragment": "onas",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "portfolio.html",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\portfolio.html"
+        },
+        {
+          "link": "index.html#kontakt",
+          "ok": true,
+          "fragment": "kontakt",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "https://www.facebook.com/profile.php?id=61575410834240",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://instagram.com/atelier_appa",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "https://www.youtube.com/@Ateli%C3%A9rAPPA",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "link": "index.html#kontakt",
+          "ok": true,
+          "fragment": "kontakt",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\index.html",
+          "fragmentFound": true
+        },
+        {
+          "link": "gdpr.html#cookies",
+          "ok": true,
+          "fragment": "cookies",
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\gdpr.html",
+          "fragmentFound": true
+        }
+      ],
+      "srcs": [
+        {
+          "src": "script.js",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\script.js"
+        },
+        {
+          "src": "img/appa_logo.png",
+          "ok": true,
+          "resolvedPath": "C:\\Users\\ivetk\\Dropbox\\Webka pre tatka\\light_web\\img\\appa_logo.png"
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=RD+Šalg.+1",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=RD+Šalg.+2",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=RD+Šalg.+3",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=Interiér+1",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=Interiér+2",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=Interiér+3",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=Komer.+1",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=Komer.+2",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://placehold.co/600x400/111/fff?text=Komer.+3",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+          "ok": true,
+          "note": "data-uri"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js",
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js",
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      ],
+      "ids": [
+        "navbarNav",
+        "rodinne-domy",
+        "interiery",
+        "komercne-budovy",
+        "projectModal",
+        "projectTitle",
+        "projectImage",
+        "projectDesc",
+        "cookie-banner",
+        "accept-cookies",
+        "decline-cookies"
+      ],
+      "htmlValidation": {
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 4,
+            "lastColumn": 28,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "head>\n    <meta charset=\"UTF-8\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 24
+          },
+          {
+            "type": "info",
+            "lastLine": 5,
+            "lastColumn": 76,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 72
+          },
+          {
+            "type": "info",
+            "lastLine": 7,
+            "lastColumn": 108,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "itle>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 104
+          },
+          {
+            "type": "info",
+            "lastLine": 9,
+            "lastColumn": 88,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "eet\">\n    <link href=\"https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css\" rel=\"stylesheet\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 84
+          },
+          {
+            "type": "info",
+            "lastLine": 10,
+            "lastColumn": 46,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "t\" />\n    <link rel=\"stylesheet\" href=\"style.css\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 42
+          },
+          {
+            "type": "info",
+            "lastLine": 20,
+            "lastColumn": 81,
+            "firstColumn": 17,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img src=\"img/appa_logo.png\" alt=\"APPA logo\" class=\"logo me-2\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 65
+          },
+          {
+            "type": "info",
+            "lastLine": 122,
+            "lastColumn": 160,
+            "firstColumn": 21,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "          <img id=\"projectImage\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" alt=\"\" class=\"img-fluid rounded mb-3\" />\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 140
+          }
+        ],
+        "url": null
+      }
+    }
+  ]
+}

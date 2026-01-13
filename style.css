@@ -1,0 +1,590 @@
+/* 🎨 FARBY — svetlá téma (default). Moje premenné farieb pre rýchle úpravy */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --accent-color: #000000;
+    --muted-color: #555555;
+    --border-color: #dddddd;
+    --light-section: #f8f8f8;
+    --hero-text-color: #ffffff;
+    --cookie-bg: #111111; /* Tmavá lišta pre kontrast */
+    --cookie-text: #ffffff;
+}
+
+/* Tmavá téma — vynútim ju na celú stránku */
+body.dark-theme {
+    --bg-color: #0e0e0e;
+    --text-color: #f5f5f5;
+    --accent-color: #ffffff;
+    --muted-color: #bbbbbb;
+    --border-color: #333333;
+    --light-section: #1a1a1a;
+    --hero-text-color: #ffffff;
+    --cookie-bg: #2a2a2a;
+    --cookie-text: #ffffff;
+}
+
+/* ========================================= GLOBAL =========================================== */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+section {
+    scroll-margin-top: 100px;
+}
+/* Link na GDPR v kontaktnom formulári (ponechávam) */
+.gdpr-link {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease;
+}
+.gdpr-link:hover {
+    color: var(--muted-color);
+}
+
+/* NAVIGÁCIA — štýly navigácie (upraviť podľa potreby) */
+.navbar {
+    transition: all 0.4s ease;
+    background: transparent;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+.navbar.scrolled {
+    background-color: var(--bg-color) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+    font-weight: 600;
+    color: var(--hero-text-color) !important;
+}
+.navbar.scrolled .nav-link {
+    color: var(--text-color) !important;
+    font-weight: 600;
+}
+/* Upravuje ikony, aby mali farbu textu v scrollovanej a tmavej téme */
+body.dark-theme .navbar .nav-link,
+.navbar.scrolled .nav-item i {
+    color: var(--text-color) !important;
+}
+.navbar .nav-link:hover {
+    opacity: 0.7;
+}
+.navbar .nav-link.active {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 4px;
+}
+.navbar-brand img.logo {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+.navbar-brand img.logo:hover {
+    transform: scale(1.05);
+}
+
+/* CTA tlačidlo v navigácii */
+.navbar .btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.navbar .btn:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+body.dark-theme .navbar .btn {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+body.dark-theme .navbar .btn:hover {
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+}
+
+/* ========================================= HERO SEKCIA =========================================== */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.zoom-bg {
+    animation: zoomInOut 12s ease-in-out infinite;
+}
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.hero-text {
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+    color: var(--hero-text-color);
+    z-index: 10;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+}
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    color: #fff;
+}
+.hero-text .btn-dark {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.hero-text .btn-light {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+.hero-text .btn:hover {
+    opacity: 0.9;
+}
+/* 🟩 Elegantné tenké šípky – SVG */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    width: 34px;
+    height: 34px;
+    transform: translateY(-50%);
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+.carousel-control-prev .carousel-arrow {
+    left: 22px;
+}
+.carousel-control-next .carousel-arrow {
+    right: 22px;
+}
+.carousel-arrow:hover {
+    opacity: 1;
+}
+
+/* ========================================= NADPISY SEKCIÍ =========================================== */
+.about-section h2, .portfolio-section h2, .spolupraca-section h2, .kontakt-section h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ========================================= O NÁS =========================================== */
+.about-section {
+    background-color: var(--bg-color);
+}
+.about-section p {
+    color: var(--muted-color);
+    line-height: 1.6;
+}
+/* Nadpis pri fotke: chcem tesný medzeru a zarovnanie hore (moje preferencie) */
+.about-section .about-heading {
+    margin-top: 0;
+    margin-bottom: 1.25rem; /* increased gap between heading and text */
+    font-size: 2rem;
+    text-align: left;
+    align-self: flex-start;
+}
+
+/* Image sizing for About section */
+.about-section .about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .about-section .about-img { max-width: 520px; }
+    /* Increase separation from carousel on larger viewports */
+    .about-section { padding-top: 4rem; padding-bottom: 4rem; }
+    .about-section .about-heading { font-size: 2.4rem; margin-bottom: 1.5rem; }
+}
+
+/* ========================================= PORTFÓLIO =========================================== */
+.portfolio-section {
+    background-color: var(--light-section);
+}
+.portfolio-card {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    position: relative;
+}
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+.portfolio-card:hover .portfolio-thumb {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+.portfolio-thumb {
+    height: 260px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* ========================================= SPOLUPRÁCA =========================================== */
+.spolupraca-section {
+    background-color: var(--bg-color);
+}
+.logos-carousel {
+    overflow: hidden;
+    max-width: 100%;
+}
+.logos-track {
+    display: flex;
+    gap: 50px;
+    animation: scrollLogos 30s linear infinite;
+    padding: 20px 0;
+}
+.logos-track img {
+    height: 70px;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+.logos-track img:hover {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.1);
+}
+/* Pridanie filtra pre Dark mode, aby boli logá biele/svetlé */
+body.dark-theme .logos-track img {
+    filter: invert(1) grayscale(100%) brightness(0.9);
+}
+body.dark-theme .logos-track img:hover {
+    filter: none; /* Odstráni filter pri hoveri, ak je originál logo farebné */
+}
+@keyframes scrollLogos {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* ========================================= KONTAKT =========================================== */
+.kontakt-section {
+    background-color: var(--bg-color);
+}
+#contactForm label {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.4rem;
+    display: block;
+}
+#contactForm input, #contactForm select, #contactForm textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+#contactForm input::placeholder, #contactForm textarea::placeholder {
+    color: var(--muted-color);
+    opacity: 0.6;
+}
+#contactForm input:focus, #contactForm textarea:focus, #contactForm select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.2); /* Jemný tieň pri focus */
+}
+body.dark-theme #contactForm input:focus, 
+body.dark-theme #contactForm textarea:focus, 
+body.dark-theme #contactForm select:focus {
+    box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.2);
+}
+body.dark-theme #contactForm input::placeholder, 
+body.dark-theme #contactForm textarea::placeholder {
+    color: #aaaaaa;
+    opacity: 0.7;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Responsive map iframe */
+.map-iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+/* 🔳 OPRAVENÝ CUSTOM CHECKBOX PRE ČIERNO-BIELY ŠTÝL - FINÁLNA VERZIA */
+.custom-checkbox-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-bottom: 1rem !important;
+}
+
+.custom-checkbox {
+    /* Odstrániť natívnu podobu checkboxu, garantovať jednotné rozmery */
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    box-sizing: border-box !important;
+
+    width: 20px !important;
+    min-width: 20px !important;
+    height: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 0 !important; /* avoid extra inline spacing */
+
+    background-color: var(--bg-color) !important;
+    border: 2px solid var(--accent-color) !important;
+    border-radius: 0 !important; /* force square */
+    position: relative !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+.custom-checkbox:checked {
+    border-color: var(--accent-color) !important;
+}
+
+/* Štýl fajky (V) - centrovaná pomocou transform */
+.custom-checkbox:checked::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 6px !important;
+    height: 10px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) rotate(45deg) !important;
+    border: solid var(--accent-color) !important;
+    border-width: 0 2.5px 2.5px 0 !important;
+}
+
+/* Štýl pri focus */
+.custom-checkbox:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08) !important;
+    outline: none !important;
+}
+body.dark-theme .custom-checkbox:focus {
+     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06) !important;
+}
+
+.custom-checkbox-label {
+    font-size: 0.95rem !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    margin: 0 !important;
+    color: var(--text-color) !important;
+    /* Dôležité: Zabezpečí, že text sedí pekne vedľa checkboxu */
+    line-height: 20px !important; 
+}
+
+
+#contactForm button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: 1px solid var(--accent-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+#contactForm button:hover {
+    background-color: var(--muted-color);
+    border-color: var(--muted-color);
+    opacity: 0.9;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ========================================= COOKIE BANNER =========================================== */
+/* Base rules applied to the banner element so visibility class swap doesn't change positioning */
+#cookie-banner {
+    position: fixed !important;
+    left: 50% !important;
+    bottom: 28px !important;
+    top: auto !important;
+    z-index: 1050 !important;
+    max-width: 920px !important;
+    width: calc(100% - 48px) !important;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.18) !important;
+    border-radius: 12px !important;
+    padding: 14px 18px !important;
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    transform: translate(-50%, 8px);
+    transition: transform 0.28s ease, opacity 0.18s ease;
+    pointer-events: none !important;
+}
+.cookie-banner-hidden {
+    /* hidden state (transparent + no interaction) */
+    opacity: 0;
+    transform: translate(-50%, 8px);
+}
+.cookie-banner-visible {
+    opacity: 1 !important;
+    transform: translate(-50%, 0) !important;
+    transition: transform 0.28s cubic-bezier(.2,.9,.3,1), opacity 0.18s ease !important;
+    pointer-events: auto !important;
+}
+.text-light-bg {
+    color: #111111;
+}
+.btn-outline-light-bg {
+    color: #111111;
+    border-color: #111111;
+}
+.btn-outline-light-bg:hover {
+    color: #ffffff;
+    background-color: #111111;
+}
+.text-underline-link {
+    color: #111111;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0.8;
+}
+.text-underline-link:hover {
+    opacity: 1;
+}
+/* Odkaz 'Viac informácií' v cookie: zabezpečiť klikateľnosť aj v zložitých vrstveniach */
+#cookie-banner .cookie-more {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    z-index: 100001 !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+#cookie-banner .cookie-text {
+    flex: 1 1 auto;
+    min-width: 160px;
+}
+#cookie-banner .cookie-actions {
+    flex: 0 0 auto;
+    margin-left: 12px;
+}
+
+
+/* ========================================= FOOTER =========================================== */
+footer {
+    font-size: 0.9rem;
+    background-color: var(--bg-color);
+    color: var(--muted-color);
+    transition: all 0.4s ease;
+}
+body.dark-theme footer {
+    color: #ffffff !important; /* biela farba pre lepšiu čitateľnosť v tmavej téme */
+    border-top-color: #444444;
+}
+/* Zabezpečiť, aby aj odkazy vo footeri boli čitateľné */
+body.dark-theme footer a {
+    color: #ffffff !important;
+    opacity: 0.9;
+}
+
+/* ========================================= RESPONSIVE =========================================== */
+@media (max-width: 768px) {
+    .hero-text {
+        left: 5%;
+        bottom: 8%;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .portfolio-thumb {
+        height: 200px;
+    }
+    /* Zmenšenie nav brandu v mobile, ak by bol príliš veľký */
+    .navbar-brand img.logo {
+        height: 40px;
+    }
+    .container-fluid.px-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .navbar-collapse {
+        text-align: center;
+        background-color: var(--bg-color);
+        padding-bottom: 1rem;
+    }
+    .navbar.scrolled .navbar-collapse {
+         background-color: var(--bg-color) !important;
+    }
+    .navbar .nav-link, 
+    .navbar.scrolled .nav-link {
+        color: var(--text-color) !important;
+    }
+    .social-links {
+        justify-content: center;
+        margin: 1rem 0;
+    }
+}
+
+/* Štýl navigácie na podstránke portfólio, aby sa prispôsobila Dark mode */
+.portfolio-page-nav {
+    background-color: var(--bg-color) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease;
+}
+.portfolio-page-nav .nav-link {
+    color: var(--text-color) !important;
+}
+.portfolio-page-nav .nav-link.active {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 4px;
+}
+body.dark-theme .portfolio-page-nav {
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Footer pre Portfólio, aby rešpektoval Dark mode */
+.portfolio-page-footer {
+    background-color: var(--bg-color) !important;
+}
+
+/* Portfolio items hover efekt */
+.portfolio-item {
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.portfolio-item:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+}

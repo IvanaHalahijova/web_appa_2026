@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ateliér APPA s.r.o.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-theme">
+
+    <!-- Cookie lišta: umiestniť na koniec <body> kvôli správnemu fixovaniu; ak chcem vypnúť agresívny fallback, nastavím data-disable-cookie-fallback="true" na #cookie-banner alebo <body>. -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#home">
+                <img src="img/appa_logo.png" alt="APPA logo" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#home">Domov</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#onas">O nás</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                    <li class="nav-item d-flex align-items-center ms-3 social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61575410834240" target="_blank" class="nav-link px-2"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com/atelier_appa" target="_blank" class="nav-link px-2"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/@Ateli%C3%A9rAPPA" target="_blank" class="nav-link px-2"><i class="bi bi-youtube"></i></a>
+                        <button type="button" class="nav-link px-2 search-toggle" aria-label="Hľadať"><i class="bi bi-search"></i></button>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="#kontakt" class="btn btn-dark rounded-pill px-4 py-2">Chcem projekt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-inner">
+                <div class="carousel-item active zoom-bg" style="background-image:url('img/interier.jpg')"></div>
+                <div class="carousel-item zoom-bg" style="background-image:url('img/barber.jpg')"></div>
+                <div class="carousel-item zoom-bg" style="background-image:url('img/horska.jpg')"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <svg class="carousel-arrow" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <svg class="carousel-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="hero-text">
+                <h1>Tvoríme priestor pre váš život</h1>
+                <p>Architektúra, interiéry a dizajn s dôrazom na detail</p>
+                <div>
+                    <a href="#portfolio" class="btn btn-dark me-2">Naše projekty</a>
+                    <a href="#onas" class="btn btn-light text-dark">O nás</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="onas" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-6">
+                    <img src="img/onas.jpeg" class="img-fluid rounded-4 shadow about-img" alt="O nás" />
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-start text-start">
+                    <h2 class="about-heading">O nás</h2>
+                    <p>Ateliér APPA s.r.o. je moderné architektonické štúdio so sídlom v Prešove. Zameriavame sa na komplexné návrhy interiérov, rodinných domov a komerčných priestorov.</p>
+                    <p>Naším cieľom je spájať estetiku, funkčnosť a osobitosť v každom projekte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section py-5">
+        <div class="container text-center">
+            <h2>Portfólio</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="portfolio.html" class="portfolio-card">
+                        <div class="portfolio-thumb" style="background-image:url('img/rd_salgovik.jpg');"></div>
+                        <h3>Rodinné domy</h3>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="portfolio.html" class="portfolio-card">
+                        <div class="portfolio-thumb" style="background-image:url('img/horska3.jpg');"></div>
+                        <h3>Interiéry</h3>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="portfolio.html" class="portfolio-card">
+                        <div class="portfolio-thumb" style="background-image:url('img/amfiteater.jpg');"></div>
+                        <h3>Komerčné budovy</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="spolupraca" class="spolupraca-section py-5">
+        <div class="container text-center">
+            <h2>Spolupráca</h2>
+            <div class="logos-carousel">
+                <div class="logos-track">
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+1" alt="Logo 1" />
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+2" alt="Logo 2" />
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+3" alt="Logo 3" />
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+4" alt="Logo 4" />
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+1" alt="Logo 1" />
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+2" alt="Logo 2" />
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+3" alt="Logo 3" />
+                    <img src="https://placehold.co/150x80/000000/ffffff?text=Partner+4" alt="Logo 4" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="kontakt-section py-5">
+        <div class="container">
+            <h2>Kontaktujte nás</h2>
+            <div class="row">
+                <div class="col-md-7">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3"><label>Meno *</label><input type="text" name="meno" required></div>
+                            <div class="col-md-6 mb-3"><label>Priezvisko *</label><input type="text" name="priezvisko" required></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3"><label>Email *</label><input type="email" name="email" required></div>
+                            <div class="col-md-6 mb-3"><label>Telefón *</label><input type="tel" name="telefon" required></div>
+                        </div>
+                        <div class="mb-3">
+                            <label>Typ projektu</label>
+                            <select name="typ" class="form-select">
+                                <option>Vyberte typ projektu</option>
+                                <option>Rodinný dom</option><option>Byt / Apartmán</option>
+                                <option>Rekonštrukcia</option><option>Komerčné priestory</option>
+                                <option>Architektonická štúdia</option><option>Interiér</option><option>Iné</option>
+                            </select>
+                        </div>
+                        <div class="mb-3"><label>Približný rozpočet (€)</label><input type="text" name="rozpocet" placeholder="napr. 5000 - 10000"></div>
+                        <div class="mb-3"><label>Vaša správa *</label><textarea name="sprava" required></textarea></div>
+                        
+                        <div class="custom-checkbox-wrapper">
+                            <input class="custom-checkbox" type="checkbox" id="suhlas" required />
+                            <label class="custom-checkbox-label" for="suhlas">
+                                *<a href="gdpr.html#gdpr-text" target="_blank" class="gdpr-link">Súhlasím so spracovaním osobných údajov</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark rounded-pill px-4 py-2">Odoslať správu</button>
+                    </form>
+                </div>
+                <div class="col-md-5 mt-5 mt-md-0">
+                    <p><strong>Adresa:</strong><br>Pionierska 24<br>080 01 Prešov</p>
+                    <p><strong>Telefón:</strong><br>+421 900 000 000</p>
+                    <p><strong>Email:</strong><br>appapresov@gmail.com</p>
+                    <iframe class="map-iframe" src="https://www.google.com/maps?q=Pionierska%20442/24%20Prešov&output=embed" height="250" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 border-top text-muted">
+        © 2025 Ateliér APPA s.r.o. | Všetky práva vyhradené.
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner-hidden">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <p class="m-0 small cookie-text" style="color: #111; margin-right: 12px;">
+                Pre zabezpečenie optimálnej funkčnosti používame súbory cookies.
+                Pokračovaním v prehliadaní súhlasíte s ich používaním.
+                <a href="gdpr.html#cookies" class="text-underline-link cookie-more" target="_blank" rel="noopener" tabindex="0">Viac informácií</a>
+            </p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" type="button" class="btn btn-sm btn-dark mt-2 mt-md-0">Súhlasím</button>
+                <button id="decline-cookies" type="button" class="btn btn-sm btn-outline-secondary mt-2 mt-md-0 ms-2">Nesúhlasím</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
