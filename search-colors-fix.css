@@ -1,0 +1,41 @@
+﻿/* Vyhľadávanie */
+#searchModal .modal-content {
+    background-color: #fff;
+    color: #111;
+}
+
+#searchModal .modal-title {
+    color: #111;
+}
+
+#searchModal .text-muted {
+    color: #666 !important;
+}
+
+#searchModal .search-result-item a {
+    color: #111;
+}
+
+#searchModal .search-result-item small {
+    color: #555;
+}
+
+.search-results-container {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 0.25rem;
+}
+
+.search-result-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-result-item a {
+    display: block;
+    padding: 0.5rem 0;
+}

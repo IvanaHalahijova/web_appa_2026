@@ -45,9 +45,9 @@
     <section id="home" class="hero-section">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
             <div class="carousel-inner">
-                <div class="carousel-item active zoom-bg" style="background-image:url('img/interier.jpg')"></div>
-                <div class="carousel-item zoom-bg" style="background-image:url('img/barber.jpg')"></div>
-                <div class="carousel-item zoom-bg" style="background-image:url('img/horska.jpg')"></div>
+                <div class="carousel-item active zoom-bg" style="background-image:url('img/optimized/hero/interier-1200.jpg')"></div>
+                <div class="carousel-item zoom-bg" style="background-image:url('img/optimized/hero/INT%20BARBERJC_08-1200.jpg')"></div>
+                <div class="carousel-item zoom-bg" style="background-image:url('img/optimized/hero/RD%20HACIK_3-1200.jpg')"></div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
                 <svg class="carousel-arrow" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -70,7 +70,11 @@
         <div class="container">
             <div class="row align-items-start">
                 <div class="col-md-6">
-                    <img src="img/onas.jpeg" class="img-fluid rounded-4 shadow about-img" alt="O nás" />
+                    <picture>
+                        <source srcset="img/optimized/onas/onas-480.webp 480w, img/optimized/onas/onas-768.webp 768w, img/optimized/onas/onas-1200.webp 1200w" type="image/webp" />
+                        <source srcset="img/optimized/onas/onas-480.jpg 480w, img/optimized/onas/onas-768.jpg 768w, img/optimized/onas/onas-1200.jpg 1200w" type="image/jpeg" />
+                        <img src="img/optimized/onas/onas-1200.jpg" class="img-fluid rounded-4 shadow about-img" alt="O nás" />
+                    </picture>
                 </div>
                 <div class="col-md-6 d-flex flex-column justify-content-start text-start">
                     <h2 class="about-heading">O nás</h2>
@@ -87,19 +91,19 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <a href="portfolio.html" class="portfolio-card">
-                        <div class="portfolio-thumb" style="background-image:url('img/rd_salgovik.jpg');"></div>
+                        <div class="portfolio-thumb" style="background-image:url('img/optimized/portfolio/RD%20HACIK_3-1200.jpg');"></div>
                         <h3>Rodinné domy</h3>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="portfolio.html" class="portfolio-card">
-                        <div class="portfolio-thumb" style="background-image:url('img/horska3.jpg');"></div>
+                        <div class="portfolio-thumb" style="background-image:url('img/optimized/hero/RD%20TIVADAR_3-1200.jpg');"></div>
                         <h3>Interiéry</h3>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="portfolio.html" class="portfolio-card">
-                        <div class="portfolio-thumb" style="background-image:url('img/amfiteater.jpg');"></div>
+                        <div class="portfolio-thumb" style="background-image:url('img/optimized/portfolio/OB%20FOREST_2-1200.jpg');"></div>
                         <h3>Komerčné budovy</h3>
                     </a>
                 </div>
