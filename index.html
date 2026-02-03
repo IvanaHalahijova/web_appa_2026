@@ -84,43 +84,54 @@
 
     <section id="onas" class="about-section py-5">
         <div class="container">
-            <!-- Hlavný úvodný text -->
-            <div class="row align-items-start mb-5">
-                <div class="col-md-6">
-                    <picture>
-                        <source srcset="img/optimized/onas/onas-480.webp 480w, img/optimized/onas/onas-768.webp 768w, img/optimized/onas/onas-1200.webp 1200w" type="image/webp" />
-                        <source srcset="img/optimized/onas/onas-480.jpg 480w, img/optimized/onas/onas-768.jpg 768w, img/optimized/onas/onas-1200.jpg 1200w" type="image/jpeg" />
-                        <img src="img/optimized/onas/onas-1200.jpg" class="img-fluid rounded-4 shadow about-img" alt="O nás" />
-                    </picture>
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-start text-start">
-                    <h2 class="about-heading">Spojenie tvorivej vízie a technickej logiky.</h2>
-                    <p>Sme Ateliér APPA – prešovský tím, ktorý tvorí architekt Michal Halahija a projektant Maroš Poremba. Veríme, že kvalitná architektúra vzniká len tam, kde sa kreativita nebije s technikou, ale kde spolu vedú neustály dialóg.</p>
-                    <p><strong>Náš názov nie je náhoda, je to náš pracovný kód: A → P → P → A.</strong></p>
-                    <p>Váš projekt si medzi sebou podávame ako v ping-pongu. Proces začína u Architekta, ktorý mu vdýchne prvotnú formu. Pokračuje u Projektanta, ktorý nastaví technické parametre a v spolupráci s ďalšími profesistami (P) vyladí funkčnosť každej súčasti. Celý kolobeh končí opäť u Architekta, ktorý dohliadne na finálny vizuálny detail a interiér.</p>
-                    <p>Neponúkame len výkresy. Ponúkame komplexné riešenia, ktoré majú hlavu aj pätu – od prvej skice až po realizáciu.</p>
-                </div>
-            </div>
-
-            <!-- Tím - fotky s popismi -->
-            <div class="row g-4 mt-5">
-                <!-- Michal Halahija -->
-                <div class="col-md-6">
-                    <div class="team-member">
-                        <img src="img/onas/michal.JPG" class="img-fluid rounded-4 shadow mb-3" alt="Ing. arch. Michal Halahija" />
-                        <h3 class="h4">Ing. arch. Michal Halahija</h3>
-                        <p class="text-muted mb-3">Autorizovaný architekt</p>
-                        <p class="team-description">„Moja práca začína tam, kde je len prázdny pozemok a vaša predstava. Hľadám pre vás architektonický koncept, ktorý je estetický, funkčný a prekvapivý. Som ten, kto projektu dáva tvár na začiatku a posledný detail na konci."</p>
+            <div class="row g-4">
+                <!-- Ľavá strana - spoločná fotka -->
+                <div class="col-lg-4">
+                    <div class="about-main-image">
+                        <picture>
+                            <source srcset="img/optimized/onas/onas-480.webp 480w, img/optimized/onas/onas-768.webp 768w, img/optimized/onas/onas-1200.webp 1200w" type="image/webp" />
+                            <source srcset="img/optimized/onas/onas-480.jpg 480w, img/optimized/onas/onas-768.jpg 768w, img/optimized/onas/onas-1200.jpg 1200w" type="image/jpeg" />
+                            <img src="img/optimized/onas/onas-1200.jpg" class="img-fluid rounded-4 shadow" alt="Ateliér APPA tím" />
+                        </picture>
                     </div>
                 </div>
 
-                <!-- Maroš Poremba -->
-                <div class="col-md-6">
-                    <div class="team-member">
-                        <img src="img/onas/maros.JPG" class="img-fluid rounded-4 shadow mb-3" alt="Ing. Maroš Poremba" />
-                        <h3 class="h4">Ing. Maroš Poremba</h3>
-                        <p class="text-muted mb-3">Projektant pozemných stavieb</p>
-                        <p class="team-description">„Zabezpečujem, aby architektonická vízia stála na pevných technických základoch. Mojou úlohou je premeniť dizajn na realizovateľný projekt, kde každý detail spĺňa stavebno-technické normy a konštrukčnú logiku. Dávam pozor, aby všetko fungovalo tak, ako má."</p>
+                <!-- Pravá strana - text a tím -->
+                <div class="col-lg-8">
+                    <!-- Hlavný text -->
+                    <div class="about-text-box mb-4">
+                        <h2 class="about-heading">Spojenie tvorivej vízie a technickej logiky.</h2>
+                        <p>Sme Ateliér APPA – prešovský tím, ktorý tvorí architekt Michal Halahija a projektant Maroš Poremba. Veríme, že kvalitná architektúra vzniká len tam, kde sa kreativita nebije s technikou, ale kde spolu vedú neustály dialóg.</p>
+                        <p><strong>Náš názov nie je náhoda, je to náš pracovný kód: A → P → P → A.</strong></p>
+                        <p>Váš projekt si medzi sebou podávame ako v ping-pongu. Proces začína u Architekta, ktorý mu vdýchne prvotnú formu. Pokračuje u Projektanta, ktorý nastaví technické parametre a v spolupráci s ďalšími profesistami (P) vyladí funkčnosť každej súčasti. Celý kolobeh končí opäť u Architekta, ktorý dohliadne na finálny vizuálny detail a interiér.</p>
+                        <p>Neponúkame len výkresy. Ponúkame komplexné riešenia, ktoré majú hlavu aj pätu – od prvej skice až po realizáciu.</p>
+                    </div>
+
+                    <!-- Tím v kruhoch -->
+                    <div class="row g-4">
+                        <!-- Michal -->
+                        <div class="col-md-6">
+                            <div class="team-member-circle">
+                                <div class="team-circle-wrapper">
+                                    <img src="img/onas/michal.JPG" class="team-circle-img" alt="Ing. arch. Michal Halahija" />
+                                </div>
+                                <h3 class="h5 mt-3">Ing. arch. Michal Halahija</h3>
+                                <p class="text-muted small mb-2">Autorizovaný architekt</p>
+                                <p class="team-description small">„Moja práca začína tam, kde je len prázdny pozemok a vaša predstava. Hľadám pre vás architektonický koncept, ktorý je estetický, funkčný a prekvapivý. Som ten, kto projektu dáva tvár na začiatku a posledný detail na konci."</p>
+                            </div>
+                        </div>
+
+                        <!-- Maroš -->
+                        <div class="col-md-6">
+                            <div class="team-member-circle">
+                                <div class="team-circle-wrapper">
+                                    <img src="img/onas/maros.JPG" class="team-circle-img" alt="Ing. Maroš Poremba" />
+                                </div>
+                                <h3 class="h5 mt-3">Ing. Maroš Poremba</h3>
+                                <p class="text-muted small mb-2">Projektant pozemných stavieb</p>
+                                <p class="team-description small">„Zabezpečujem, aby architektonická vízia stála na pevných technických základoch. Mojou úlohou je premeniť dizajn na realizovateľný projekt, kde každý detail spĺňa stavebno-technické normy a konštrukčnú logiku. Dávam pozor, aby všetko fungovalo tak, ako má."</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
