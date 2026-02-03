@@ -345,7 +345,7 @@ body.dark-theme .navbar .nav-link,
 }
 
 .team-member-circle .auth-number {
-    color: #fff !important;
+    color: var(--muted-color) !important;
     font-style: italic;
     font-weight: normal;
 }
