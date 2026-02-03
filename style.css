@@ -637,3 +637,89 @@ body.dark-theme .portfolio-page-nav {
 #searchModal .search-result-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
+/* ========================================= PORTFOLIO GALÉRIA =========================================== */
+
+.portfolio-category {
+    scroll-margin-top: 100px;
+}
+
+.portfolio-category h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+/* Project Card */
+.portfolio-project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .portfolio-project-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .portfolio-project-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Thumbnail */
+.project-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+    filter: brightness(0.85);
+}
+
+.portfolio-project-card:hover .project-thumb {
+    transform: scale(1.08);
+    filter: brightness(1);
+}
+
+/* Project Info Overlay */
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: #fff;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.portfolio-project-card:hover .project-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+}
+
+.project-count {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin: 0;
+}
