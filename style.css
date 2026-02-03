@@ -278,6 +278,33 @@ body.dark-theme .navbar .nav-link,
     .about-section .about-heading { font-size: 2.4rem; margin-bottom: 1.5rem; }
 }
 
+/* Team member cards */
+.team-member {
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+}
+.team-member h3 {
+    color: var(--text-color);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.team-member .text-muted {
+    color: var(--muted-color) !important;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+.team-member .team-description {
+    color: var(--muted-color);
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: left;
+}
+
 /* ========================================= PORTFÓLIO =========================================== */
 .portfolio-section {
     background-color: var(--light-section);
