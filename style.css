@@ -279,6 +279,12 @@ body.dark-theme .navbar .nav-link,
 }
 
 /* About section layout */
+.about-main-image {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
 .about-main-image img {
     width: 100%;
     height: auto;
