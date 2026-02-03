@@ -387,7 +387,15 @@ body.dark-theme .navbar .nav-link,
     background-size: cover;
     background-position: center;
     margin-bottom: 1rem;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Grayscale hover efekt pre portfolio karty */
+.grayscale-hover {
+    filter: grayscale(100%);
+}
+.portfolio-card:hover .grayscale-hover {
+    filter: grayscale(0%);
 }
 
 /* ========================================= SPOLUPRÁCA =========================================== */
