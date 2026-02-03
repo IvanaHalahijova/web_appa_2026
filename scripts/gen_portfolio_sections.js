@@ -53,7 +53,7 @@ Object.entries(categories).forEach(([catId, catData]) => {
     
     console.log(`                <div class="col-lg-4 col-md-6" data-aos="zoom-in">`);
     console.log(`                    <div class="portfolio-project-card" data-project="${proj.name}">`);
-    console.log(`                        <div class="project-thumb" style="background-image:url('img/optimized/portfolio/${encodeURI(thumbnail)}-480.jpg')"></div>`);
+    console.log(`                        <div class="project-thumb" style="background-image:url('img/optimized/portfolio/${encodeURI(thumbnail)}-1800.jpg')"></div>`);
     console.log(`                        <div class="project-info">`);
     console.log(`                            <h3>${cleanName}</h3>`);
     console.log(`                            <p>${proj.images.length} fotografií</p>`);

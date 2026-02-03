@@ -683,13 +683,13 @@ body.dark-theme .portfolio-project-card:hover {
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: transform 0.4s ease;
-    filter: brightness(0.85);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: grayscale(100%) brightness(0.7);
 }
 
 .portfolio-project-card:hover .project-thumb {
     transform: scale(1.08);
-    filter: brightness(1);
+    filter: grayscale(0%) brightness(1);
 }
 
 /* Project Info Overlay */
@@ -722,4 +722,50 @@ body.dark-theme .portfolio-project-card:hover {
     font-size: 0.95rem;
     color: #bbb;
     margin: 0;
+}
+
+/* Portfolio Lightbox Modal */
+#portfolioModal .modal-content {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+#portfolioModal .modal-body {
+    padding: 2rem;
+}
+
+.lightbox-nav {
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.lightbox-nav:hover {
+    opacity: 0.7;
+}
+
+.lightbox-nav i {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-image-container {
+    max-width: 100%;
+}
+
+#lightboxImage {
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#imageCounter {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .lightbox-nav i {
+        font-size: 2rem !important;
+    }
+    
+    #portfolioModal .modal-body {
+        padding: 1rem;
+    }
 }
