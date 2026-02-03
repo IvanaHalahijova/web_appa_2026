@@ -591,11 +591,7 @@ body.dark-theme footer a {
     }
     .navbar-collapse {
         text-align: center;
-        background-color: var(--bg-color);
         padding-bottom: 1rem;
-    }
-    .navbar.scrolled .navbar-collapse {
-         background-color: var(--bg-color) !important;
     }
     .navbar .nav-link, 
     .navbar.scrolled .nav-link {
