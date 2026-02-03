@@ -341,11 +341,13 @@ body.dark-theme .navbar .nav-link,
 .team-member-circle .text-muted {
     color: var(--muted-color) !important;
     font-style: italic;
+    font-weight: normal;
 }
 
 .team-member-circle .auth-number {
     color: #fff !important;
     font-style: italic;
+    font-weight: normal;
 }
 
 .team-member-circle .team-description {
