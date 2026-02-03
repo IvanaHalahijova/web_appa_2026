@@ -568,12 +568,6 @@ body.dark-theme footer a {
 
 /* ========================================= RESPONSIVE =========================================== */
 @media (max-width: 768px) {
-    /* Carousel - celý obrázok viditeľný na mobile */
-    .carousel-item {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: #000;
-    }
     .hero-text {
         left: 5%;
         bottom: 8%;
