@@ -281,7 +281,7 @@ body.dark-theme .navbar .nav-link,
 /* About section layout */
 .about-main-image {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     height: 100%;
 }
 
