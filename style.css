@@ -79,6 +79,26 @@ section {
     font-weight: 600;
     text-shadow: none;
 }
+/* Hamburger menu - biela farba pre viditeľnosť */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+/* Pri scrollovaní hamburger tmavý */
+.navbar.scrolled .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+.navbar.scrolled .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar.scrolled .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
 /* Upravuje ikony, aby mali farbu textu v scrollovanej a tmavej téme */
 body.dark-theme .navbar .nav-link,
 .navbar.scrolled .nav-item i {
@@ -101,44 +121,34 @@ body.dark-theme .navbar .nav-link,
 }
 
 /* CTA tlačidlo v navigácii */
-.navbar .btn-primary {
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+.btn-cta {
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
     background-color: #000 !important;
     color: #fff !important;
     border: 2px solid #000 !important;
 }
-.navbar .btn-primary:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+.btn-cta:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
     transform: translateY(-2px);
     background-color: #1a1a1a !important;
     color: #fff !important;
 }
 /* Pri scrollovaní - biely button s čiernym textom */
-.navbar.scrolled .btn-primary,
-.navbar.scrolled .btn-primary:focus,
-.navbar.scrolled .btn-primary:active {
+.navbar.scrolled .btn-cta,
+.navbar.scrolled .btn-cta:focus,
+.navbar.scrolled .btn-cta:active {
     background-color: #fff !important;
     color: #000 !important;
     border: 2px solid #000 !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
 }
-.navbar.scrolled .btn-primary:hover {
+.navbar.scrolled .btn-cta:hover {
     background-color: #f5f5f5 !important;
     color: #000 !important;
     border: 2px solid #000 !important;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
     transform: translateY(-2px);
-}
-body.dark-theme .navbar .btn-primary {
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
-    background-color: #000 !important;
-    color: #fff !important;
-}
-body.dark-theme .navbar .btn-primary:hover {
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
-    background-color: #1a1a1a !important;
-    color: #fff !important;
 }
 
 /* ========================================= HERO SEKCIA =========================================== */
@@ -558,6 +568,12 @@ body.dark-theme footer a {
 
 /* ========================================= RESPONSIVE =========================================== */
 @media (max-width: 768px) {
+    /* Carousel - celý obrázok viditeľný na mobile */
+    .carousel-item {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #000;
+    }
     .hero-text {
         left: 5%;
         bottom: 8%;
