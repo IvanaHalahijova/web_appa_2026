@@ -345,8 +345,7 @@ body.dark-theme .navbar .nav-link,
 
 .team-member-circle .auth-number {
     color: #fff !important;
-    font-style: normal;
-    font-weight: 600;
+    font-style: italic;
 }
 
 .team-member-circle .team-description {
