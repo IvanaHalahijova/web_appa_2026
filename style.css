@@ -343,6 +343,12 @@ body.dark-theme .navbar .nav-link,
     font-style: italic;
 }
 
+.team-member-circle .auth-number {
+    color: #fff !important;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .team-member-circle .team-description {
     color: var(--muted-color);
     line-height: 1.6;
