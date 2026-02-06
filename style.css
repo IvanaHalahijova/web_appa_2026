@@ -505,12 +505,47 @@ body.dark-theme #contactForm textarea::placeholder {
     resize: vertical;
 }
 
+/* Contact page links (phone, email) */
+.contact-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Contact social media icons */
+.contact-social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contact-social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+.contact-social-links a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: var(--accent-color);
+}
+
 /* Responsive map iframe */
 .map-iframe {
     width: 100%;
     max-width: 100%;
     height: 250px;
     border: 0;
+    border-radius: 12px;
+}
+
+/* Gap between contact form and contact info */
+.kontakt-section .row {
+    gap: 3rem;
 }
 
 /* 🔳 OPRAVENÝ CUSTOM CHECKBOX PRE ČIERNO-BIELY ŠTÝL - FINÁLNA VERZIA */
