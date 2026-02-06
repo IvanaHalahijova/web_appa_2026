@@ -31,6 +31,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // ---------------------------------------------
+    // Automatické zatvorenie navbar po kliknutí na link (mobile)
+    // ---------------------------------------------
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    if (navLinks && navbarToggler && navbarCollapse) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Ak je navbar otvorený (má show class), zavrieme ho
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        });
+    }
+
+    // ---------------------------------------------
     // Formulár — odosielanie cez EmailJS (upraviť SERVICE/TEMPLATE id)
     // ---------------------------------------------
     const form = document.getElementById("contactForm");
