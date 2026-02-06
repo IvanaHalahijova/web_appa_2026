@@ -543,9 +543,15 @@ body.dark-theme #contactForm textarea::placeholder {
     border-radius: 12px;
 }
 
-/* Gap between contact form and contact info */
-.kontakt-section .row {
-    gap: 3rem;
+/* Contact info section spacing */
+.kontakt-section .col-md-5 {
+    padding-left: 3rem;
+}
+
+@media (max-width: 767px) {
+    .kontakt-section .col-md-5 {
+        padding-left: 15px;
+    }
 }
 
 /* 🔳 OPRAVENÝ CUSTOM CHECKBOX PRE ČIERNO-BIELY ŠTÝL - FINÁLNA VERZIA */
