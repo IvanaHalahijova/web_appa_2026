@@ -398,7 +398,7 @@ body.dark-theme .navbar .nav-link,
 /* ========================================= SPOLUPRÁCA =========================================== */
 .spolupraca-section {
     background-color: var(--bg-color);
-    padding-bottom: 80px !important;
+    padding-bottom: 30px !important;
 }
 
 /* Static partner logos (up to 3 logos) */
@@ -461,7 +461,7 @@ body.dark-theme .logos-track img:hover {
 /* ========================================= KONTAKT =========================================== */
 .kontakt-section {
     background-color: var(--bg-color);
-    padding-top: 80px !important;
+    padding-top: 40px !important;
     border-top: 1px solid var(--border-color);
 }
 #contactForm label {
