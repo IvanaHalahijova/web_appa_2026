@@ -11,68 +11,98 @@
     <style>
         /* Špecifické štýly pre GDPR stránku */
         .gdpr-content {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
-            line-height: 1.8;
-            padding: 30px 0;
+            line-height: 1.7;
+            padding: 30px 0 60px;
         }
         .gdpr-content h1, .gdpr-content h2, .gdpr-content h3, .gdpr-content h4 {
-            font-weight: 700;
-            margin-top: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
             margin-bottom: 1rem;
             color: var(--text-color);
         }
-        .gdpr-content h1 { font-size: 2.5rem; }
-        .gdpr-content h2 { font-size: 1.8rem; margin-top: 2.5rem; }
-        .gdpr-content h3 { font-size: 1.4rem; margin-top: 2rem; }
-        .gdpr-content h4 { font-size: 1.1rem; margin-top: 1.5rem; }
+        .gdpr-content h1 { 
+            font-size: 1.9rem; 
+            margin-bottom: 0.5rem;
+        }
+        .gdpr-content h2 { 
+            font-size: 1.3rem; 
+            margin-top: 2.5rem;
+            font-weight: 600;
+        }
+        .gdpr-content h3 { 
+            font-size: 1.1rem; 
+            margin-top: 1.8rem;
+            font-weight: 600;
+        }
+        .gdpr-content h4 { 
+            font-size: 1rem; 
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
         .gdpr-content p, .gdpr-content ul {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             color: var(--muted-color);
+            margin-bottom: 1rem;
         }
         .gdpr-content li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.65rem;
+            line-height: 1.6;
         }
         .gdpr-content a {
             color: var(--accent-color);
-            text-decoration: underline;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
         }
         .gdpr-content a:hover {
-            opacity: 0.8;
+            border-bottom-color: var(--accent-color);
         }
         .gdpr-content strong {
             color: var(--text-color);
             font-weight: 600;
         }
         .gdpr-content em {
-            opacity: 0.8;
-            font-size: 0.9rem;
+            opacity: 0.7;
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 1.5rem;
         }
         /* Tabuľky */
         .gdpr-content .table {
             margin-top: 1rem;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            font-size: 0.85rem;
         }
         .gdpr-content .table thead th {
-            background-color: rgba(0, 0, 0, 0.05);
+            background-color: rgba(0, 0, 0, 0.03);
             font-weight: 600;
+            font-size: 0.8rem;
             color: var(--text-color);
             border-color: var(--border-color);
+            padding: 0.6rem 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         body.dark-theme .gdpr-content .table thead th {
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgba(255, 255, 255, 0.03);
         }
         .gdpr-content .table td, .gdpr-content .table th {
             border-color: var(--border-color);
-            padding: 0.75rem;
+            padding: 0.65rem 0.75rem;
             vertical-align: top;
         }
         .gdpr-content .table tbody tr:hover {
-            background-color: rgba(0, 0, 0, 0.02);
+            background-color: rgba(0, 0, 0, 0.015);
         }
         body.dark-theme .gdpr-content .table tbody tr:hover {
-            background-color: rgba(255, 255, 255, 0.02);
+            background-color: rgba(255, 255, 255, 0.015);
+        }
+        /* Zlepšenie čitateľnosti dlhších textov */
+        .gdpr-content > p:first-of-type {
+            font-size: 0.95rem;
+            margin-top: 1.5rem;
         }
     </style>
 </head>
