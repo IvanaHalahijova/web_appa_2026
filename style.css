@@ -800,6 +800,22 @@ body.dark-theme footer a {
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 4px;
 }
+/* CTA button na podstránkach - biely s čiernym textom */
+.portfolio-page-nav .btn-cta,
+.portfolio-page-nav .btn-cta:focus,
+.portfolio-page-nav .btn-cta:active {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+.portfolio-page-nav .btn-cta:hover {
+    background-color: #f5f5f5 !important;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+    transform: translateY(-2px);
+}
 body.dark-theme .portfolio-page-nav {
     box-shadow: 0 2px 12px rgba(255, 255, 255, 0.05) !important;
 }
