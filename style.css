@@ -411,8 +411,8 @@ body.dark-theme .navbar .nav-link,
     flex-wrap: wrap;
 }
 .partner-logo img {
-    height: 80px;
-    max-width: 300px;
+    height: 60px;
+    max-width: 250px;
     filter: grayscale(100%);
     opacity: 0.7;
     transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
@@ -723,7 +723,7 @@ body.dark-theme footer a {
     }
     /* Partner logo na mobile */
     .partner-logo img {
-        height: 50px;
+        height: 40px;
     }
     .partner-logos-static {
         gap: 30px;
