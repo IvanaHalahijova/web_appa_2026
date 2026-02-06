@@ -984,3 +984,63 @@ body.dark-theme .portfolio-project-card:hover {
         padding: 1rem;
     }
 }
+/* ========================================= TOAST NOTIFICATION =========================================== */
+.toast-notification {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    min-width: 320px;
+    max-width: 400px;
+    transform: translateX(450px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    pointer-events: none;
+}
+
+.toast-notification.show {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.toast-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.toast-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.toast-message strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.toast-message p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.95;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .toast-notification {
+        right: 15px;
+        left: 15px;
+        min-width: unset;
+        max-width: unset;
+        top: 80px;
+    }
+}

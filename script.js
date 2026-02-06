@@ -49,6 +49,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ---------------------------------------------
+    // Toast notification helper
+    // ---------------------------------------------
+    function showToast(message, type = 'success') {
+        const toast = document.getElementById('successToast');
+        if (!toast) return;
+        
+        const messageEl = toast.querySelector('.toast-message p');
+        if (messageEl) messageEl.textContent = message;
+        
+        toast.classList.add('show');
+        
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 4000);
+    }
+
+    // ---------------------------------------------
     // Formulár — odosielanie cez EmailJS (upraviť SERVICE/TEMPLATE id)
     // ---------------------------------------------
     const form = document.getElementById("contactForm");
@@ -58,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             // Validácia - skontroluj či sú všetky required polia vyplnené
             if (!this.checkValidity()) {
-                alert("Prosím, vyplňte všetky povinné polia.");
+                showToast("Prosím, vyplňte všetky povinné polia.", "error");
                 return;
             }
             
@@ -70,11 +87,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             emailjs.sendForm("TVOJ_SERVICE_ID", "TVOJ_TEMPLATE_ID", this) // ← doplniť svoj SERVICE a TEMPLATE ID
                 .then(() => {
-                    alert("Ďakujeme! Vaša správa bola úspešne odoslaná.");
+                    showToast("Vaša správa bola úspešne odoslaná.");
                     this.reset();
                 })
                 .catch(() => {
-                    alert("Nastala chyba pri odosielaní. Skúste to znova.");
+                    showToast("Nastala chyba pri odosielaní. Skúste to znova.", "error");
                 })
                 .finally(() => {
                     submitBtn.textContent = originalText;
