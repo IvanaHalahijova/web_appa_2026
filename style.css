@@ -399,6 +399,31 @@ body.dark-theme .navbar .nav-link,
 .spolupraca-section {
     background-color: var(--bg-color);
 }
+
+/* Static partner logos (up to 3 logos) */
+.partner-logos-static {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.partner-logo img {
+    height: 80px;
+    max-width: 200px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    object-fit: contain;
+}
+.partner-logo img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Carousel for partner logos (activate when more than 3 logos) */
 .logos-carousel {
     overflow: hidden;
     max-width: 100%;
