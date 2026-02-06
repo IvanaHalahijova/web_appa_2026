@@ -732,6 +732,7 @@ body.dark-theme footer a {
     .hero-text {
         left: 5%;
         bottom: 8%;
+        z-index: 1100;
     }
     .hero-text h1 {
         font-size: 2rem;
@@ -769,6 +770,20 @@ body.dark-theme footer a {
     .partner-logos-static {
         gap: 30px;
         padding: 20px 0;
+    }
+    /* Cookie banner na mobile - nižšie aby neprekrýval tlačidlá v hero */
+    #cookie-banner {
+        bottom: 10px !important;
+        width: calc(100% - 24px) !important;
+        font-size: 0.85rem !important;
+        padding: 12px 14px !important;
+    }
+    #cookie-banner .cookie-text {
+        font-size: 0.85rem !important;
+    }
+    #cookie-banner .btn {
+        font-size: 0.8rem !important;
+        padding: 0.35rem 0.75rem !important;
     }
 }
 
