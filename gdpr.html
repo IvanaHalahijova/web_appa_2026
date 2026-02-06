@@ -16,19 +16,63 @@
             line-height: 1.8;
             padding: 30px 0;
         }
-        .gdpr-content h1, .gdpr-content h2 {
+        .gdpr-content h1, .gdpr-content h2, .gdpr-content h3, .gdpr-content h4 {
             font-weight: 700;
             margin-top: 1.5rem;
             margin-bottom: 1rem;
+            color: var(--text-color);
         }
         .gdpr-content h1 { font-size: 2.5rem; }
-        .gdpr-content h2 { font-size: 1.8rem; }
+        .gdpr-content h2 { font-size: 1.8rem; margin-top: 2.5rem; }
+        .gdpr-content h3 { font-size: 1.4rem; margin-top: 2rem; }
+        .gdpr-content h4 { font-size: 1.1rem; margin-top: 1.5rem; }
         .gdpr-content p, .gdpr-content ul {
             font-size: 0.95rem;
             color: var(--muted-color);
         }
         .gdpr-content li {
             margin-bottom: 0.5rem;
+        }
+        .gdpr-content a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        .gdpr-content a:hover {
+            opacity: 0.8;
+        }
+        .gdpr-content strong {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        .gdpr-content em {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        /* Tabuľky */
+        .gdpr-content .table {
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .gdpr-content .table thead th {
+            background-color: rgba(0, 0, 0, 0.05);
+            font-weight: 600;
+            color: var(--text-color);
+            border-color: var(--border-color);
+        }
+        body.dark-theme .gdpr-content .table thead th {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        .gdpr-content .table td, .gdpr-content .table th {
+            border-color: var(--border-color);
+            padding: 0.75rem;
+            vertical-align: top;
+        }
+        .gdpr-content .table tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        body.dark-theme .gdpr-content .table tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
         }
     </style>
 </head>
@@ -67,60 +111,175 @@
         <section id="gdpr-text" class="py-5">
             <div class="container gdpr-content">
                 <h1>Zásady ochrany osobných údajov (GDPR)</h1>
+                <p><em>Platné od: 1. mája 2025 | Posledná aktualizácia: 6. februára 2026</em></p>
 
                 <p>
                     Tieto zásady ochrany osobných údajov sa vzťahujú na spracovanie osobných údajov
-                    spoločnosťou **Ateliér APPA s.r.o.**
+                    spoločnosťou <strong>Ateliér APPA s.r.o.</strong> v súlade s Nariadením Európskeho parlamentu
+                    a Rady (EÚ) 2016/679 (GDPR) a zákonom č. 18/2018 Z. z. o ochrane osobných údajov.
                 </p>
 
                 <h2>1. Prevádzkovateľ</h2>
                 <p>
                     Prevádzkovateľom, ktorý spracúva Vaše osobné údaje, je:<br>
-                    **Názov:** Ateliér APPA s.r.o.<br>
-                    **Sídlo:** [XX] Pionierska 24, 080 01 Prešov<br>
-                    **IČO:** [XX]<br>
-                    **Kontakt:** appapresov@gmail.com
+                    <strong>Obchodné meno:</strong> Ateliér APPA s.r.o.<br>
+                    <strong>Sídlo:</strong> Pionierska 442/24, 080 05 Prešov, Slovenská republika<br>
+                    <strong>IČO:</strong> 56880294<br>
+                    <strong>IČ DPH:</strong> SK2122484683<br>
+                    <strong>Registrácia:</strong> Obchodný register Okresného súdu Prešov, oddiel: Sro, vložka č. 50849/P<br>
+                    <strong>Dátum zápisu:</strong> 1. mája 2025<br>
+                    <strong>Kontakt:</strong> appapresov@gmail.com | +421 944 462 420
                 </p>
 
                 <h2>2. Účely a právny základ spracovania</h2>
                 <p>Vaše osobné údaje spracúvame na základe nasledovných právnych základov a pre dané účely:</p>
                 <ul>
-                    <li>**Plnenie zmluvy (a predzmluvné vzťahy):** Spracovanie údajov (Meno, priezvisko, kontakt) nevyhnutných na zodpovedanie dopytu, vypracovanie cenovej ponuky alebo realizáciu architektonického projektu.</li>
-                    <li>**Oprávnený záujem:** Priama komunikácia s existujúcimi klientmi.</li>
-                    <li>**Súhlas dotknutej osoby:** Ak nám poskytnete Váš súhlas (napr. pri registrácii do newslettra, čo momentálne nie je implementované).</li>
+                    <li><strong>Plnenie zmluvy (a predzmluvné vzťahy):</strong> Spracovanie údajov (meno, priezvisko, kontakt) nevyhnutných na zodpovedanie dopytu, vypracovanie cenovej ponuky alebo realizáciu architektonického projektu - čl. 6 ods. 1 písm. b) GDPR.</li>
+                    <li><strong>Oprávnený záujem:</strong> Priama komunikácia s existujúcimi klientmi, archivácia ukončených projektov - čl. 6 ods. 1 písm. f) GDPR.</li>
+                    <li><strong>Súhlas dotknutej osoby:</strong> Spracovanie analytických cookies (Google Analytics) - čl. 6 ods. 1 písm. a) GDPR. Súhlas môžete kedykoľvek odvolať.</li>
+                    <li><strong>Plnenie právnej povinnosti:</strong> Archivácia účtovných dokladov a zmlúv podľa zákona č. 431/2002 Z. z. o účtovníctve - čl. 6 ods. 1 písm. c) GDPR.</li>
                 </ul>
 
                 <h2>3. Rozsah spracúvaných údajov</h2>
-                <p>Spracúvame len tie osobné údaje, ktoré nám poskytnete prostredníctvom kontaktného formulára, alebo priamo pri objednávke:</p>
+                <p>Spracúvame len tie osobné údaje, ktoré nám poskytnete prostredníctvom kontaktného formulára alebo priamo pri objednávke:</p>
                 <ul>
-                    <li>Identifikačné údaje (Meno, Priezvisko)</li>
-                    <li>Kontaktné údaje (Email, Telefón)</li>
-                    <li>Údaje obsiahnuté v správe (Typ projektu, Rozpočet, Text správy)</li>
+                    <li><strong>Identifikačné údaje:</strong> Meno, Priezvisko</li>
+                    <li><strong>Kontaktné údaje:</strong> E-mailová adresa, Telefónne číslo</li>
+                    <li><strong>Údaje obsiahnuté v správe:</strong> Typ projektu, Približný rozpočet, Text správy</li>
+                    <li><strong>Technické údaje:</strong> IP adresa, informácie o prehliadači a zariadení (len pri použití analytických cookies)</li>
                 </ul>
 
                 <h2>4. Doba uchovávania</h2>
-                <p>Osobné údaje spracúvané na základe plnenia zmluvy uchovávame počas trvania zmluvného vzťahu a 10 rokov po jeho ukončení kvôli zákonným archivačným povinnostiam. Údaje z kontaktného formulára, pri ktorom nedošlo k realizácii projektu, uchovávame maximálne 2 roky.</p>
+                <ul>
+                    <li><strong>Zmluvné údaje:</strong> Počas trvania zmluvného vzťahu a 10 rokov po jeho ukončení (zákonná archivačná povinnosť).</li>
+                    <li><strong>Kontaktné formuláre bez realizácie:</strong> Maximálne 2 roky od poslednej komunikácie.</li>
+                    <li><strong>Cookies údaje:</strong> Google Analytics údaje - maximálne 26 mesiacov, súhlas s cookies - 1 rok.</li>
+                    <li><strong>Po uplynutí doby:</strong> Údaje budú bezpečne vymazané alebo anonymizované.</li>
+                </ul>
 
-                <h2>5. Vaše práva</h2>
+                <h2>5. Príjemcovia osobných údajov (tretie strany)</h2>
+                <p>Vaše osobné údaje môžu byť sprístupnené nasledujúcim kategóriám spracovateľov:</p>
+                <ul>
+                    <li><strong>EmailJS (USA):</strong> Spracovanie a odosielanie správ z kontaktného formulára - <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener">Zásady ochrany súkromia</a></li>
+                    <li><strong>Google Ireland Limited:</strong> Google Analytics (analytické cookies), Google Fonts (typografia) - <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Zásady ochrany súkromia</a></li>
+                    <li><strong>jsDelivr CDN:</strong> Dodávanie CSS/JS knižníc (Bootstrap) - <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net" target="_blank" rel="noopener">Zásady ochrany súkromia</a></li>
+                    <li><strong>Hosting provider:</strong> Poskytovateľ webového hostingu (údaje uložené na serveri).</li>
+                </ul>
+                <p>S týmito spracovateľmi máme uzatvorené zmluvy o spracovaní osobných údajov zabezpečujúce ochranu Vašich údajov.</p>
+
+                <h2>6. Vaše práva</h2>
                 <p>Ako dotknutá osoba máte právo:</p>
                 <ul>
-                    <li>Žiadať prístup k Vašim osobným údajom.</li>
-                    <li>Na opravu nepresných alebo neúplných údajov.</li>
-                    <li>Na vymazanie Vašich osobných údajov ("právo na zabudnutie"), pokiaľ to nezakazujú iné právne predpisy.</li>
-                    <li>Na obmedzenie spracovania a prenosnosť údajov.</li>
-                    <li>Podať sťažnosť dozornému orgánu (Úrad na ochranu osobných údajov SR).</li>
+                    <li><strong>Právo na prístup:</strong> Žiadať prístup k Vašim osobným údajom a informácie o ich spracovaní.</li>
+                    <li><strong>Právo na opravu:</strong> Požiadať o opravu nepresných alebo doplnenie neúplných údajov.</li>
+                    <li><strong>Právo na vymazanie:</strong> Žiadať vymazanie Vašich osobných údajov ("právo na zabudnutie"), pokiaľ to nezakazujú iné právne predpisy.</li>
+                    <li><strong>Právo na obmedzenie spracovania:</strong> Požiadať o obmedzenie spracovania v určitých prípadoch.</li>
+                    <li><strong>Právo na prenosnosť údajov:</strong> Získať Vaše údaje v štruktúrovanom, bežne používanom formáte.</li>
+                    <li><strong>Právo namietať:</strong> Namietať proti spracovaniu na základe oprávneného zájmu.</li>
+                    <li><strong>Právo odvolať súhlas:</strong> Kedykoľvek odvolať súhlas so spracovaním cookies.</li>
+                    <li><strong>Právo podať sťažnosť:</strong> Podať sťažnosť dozornému orgánu - <a href="https://dataprotection.gov.sk" target="_blank" rel="noopener">Úrad na ochranu osobných údajov SR</a>.</li>
                 </ul>
-                
-                <h2 id="cookies">6. Zásady používania súborov Cookies</h2>
-                <p>Cookies sú malé textové súbory, ktoré webová stránka ukladá vo Vašom počítači alebo mobilnom zariadení. Tieto súbory používame na zabezpečenie funkčnosti stránky, analýzu návštevnosti a na personalizáciu obsahu.</p>
+                <p>Pre uplatnenie svojich práv nás kontaktujte na: <strong>appapresov@gmail.com</strong></p>
 
-                <h3>Typy používaných Cookies:</h3>
+                <h2>7. Bezpečnosť osobných údajov</h2>
+                <p>Vaše osobné údaje chránime technickými a organizačnými opatreniami vrátane:</p>
                 <ul>
-                    <li>**Nevyhnutné (funkčné) Cookies:** Sú potrebné pre základnú funkčnosť stránky a uchovávajú napríklad informáciu o tom, či ste prijali súhlas s cookies (preto sa nebudete musieť znova pýtať).</li>
-                    <li>**Analytické/Štatistické Cookies:** Pomáhajú nám pochopiť, ako návštevníci používajú našu webovú stránku (napr. Google Analytics). Tieto súbory používame iba s Vašim súhlasom (cez cookies lištu).</li>
+                    <li>Šifrovanie spojenia (HTTPS/SSL certifikát)</li>
+                    <li>Zabezpečený webový hosting s pravidelnými zálohami</li>
+                    <li>Obmedzený prístup k osobným údajom len pre oprávnených zamestnancov</li>
+                    <li>Pravidelné bezpečnostné kontroly a aktualizácie systémov</li>
                 </ul>
+
+                <h2>8. Automatizované rozhodovanie a profilovanie</h2>
+                <p>Nepoužívame automatizované rozhodovanie ani profilovanie, ktoré by malo právne účinky alebo významný vplyv na Vašu osobu.</p>
                 
-                <p>Súhlas s analytickými cookies môžete kedykoľvek odvolať zmazaním cookies vo Vašom prehliadači.</p>
+                <h2 id="cookies">9. Zásady používania súborov Cookies</h2>
+                <p>Cookies sú malé textové súbory, ktoré webová stránka ukladá vo Vašom počítači alebo mobilnom zariadení. Tieto súbory používame na zabezpečenie funkčnosti stránky, analýzu návštevnosti a zlepšenie používateľskej skúsenosti.</p>
+
+                <h3>9.1 Typy používaných Cookies</h3>
+                
+                <h4>A) Nevyhnutné (funkčné) Cookies</h4>
+                <p>Tieto cookies sú potrebné pre základnú funkčnosť webovej stránky. Bez nich by stránka nemohla fungovať správne. <strong>Nevyžadujú súhlas.</strong></p>
+                
+                <table class="table table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>Názov cookie</th>
+                            <th>Účel</th>
+                            <th>Platnosť</th>
+                            <th>Poskytovateľ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>cookie_consent</td>
+                            <td>Uloženie Vášho súhlasu/nesúhlasu s cookies</td>
+                            <td>1 rok</td>
+                            <td>Ateliér APPA</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>B) Analytické/Štatistické Cookies</h4>
+                <p>Pomáhajú nám pochopiť, ako návštevníci používajú našu webovú stránku a zlepšovať jej funkčnosť. <strong>Vyžadujú súhlas.</strong></p>
+                
+                <table class="table table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>Názov cookie</th>
+                            <th>Účel</th>
+                            <th>Platnosť</th>
+                            <th>Poskytovateľ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>_ga</td>
+                            <td>Rozlišovanie návštevníkov (Google Analytics)</td>
+                            <td>2 roky</td>
+                            <td>Google Ireland Ltd.</td>
+                        </tr>
+                        <tr>
+                            <td>_gid</td>
+                            <td>Rozlišovanie návštevníkov (Google Analytics)</td>
+                            <td>24 hodín</td>
+                            <td>Google Ireland Ltd.</td>
+                        </tr>
+                        <tr>
+                            <td>_gat</td>
+                            <td>Obmedzenie rýchlosti žiadostí</td>
+                            <td>1 minúta</td>
+                            <td>Google Ireland Ltd.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>9.2 Správa cookies</h3>
+                <p>Súhlas s analytickými cookies môžete kedykoľvek odvolať prostredníctvom nastavení Vášho prehliadača alebo kliknutím na tlačidlo "Nesúhlasím" v cookie banneri.</p>
+                
+                <h4>Návod na správu cookies v prehliadačoch:</h4>
+                <ul>
+                    <li><strong>Google Chrome:</strong> Nastavenia → Ochrana súkromia a zabezpečenie → Súbory cookie a ďalšie údaje lokality</li>
+                    <li><strong>Mozilla Firefox:</strong> Predvoľby → Súkromie a zabezpečenie → Súbory cookie a údaje stránok</li>
+                    <li><strong>Safari:</strong> Predvoľby → Súkromie → Spravovať údaje webových stránok</li>
+                    <li><strong>Microsoft Edge:</strong> Nastavenia → Súbory cookie a povolenia lokality → Spravovať a odstrániť súbory cookie</li>
+                </ul>
+                <p><strong>Upozornenie:</strong> Zakázanie nevyhnutných cookies môže obmedziť funkčnosť webovej stránky.</p>
+
+                <h3>9.3 Ďalšie informácie o Google Analytics</h3>
+                <p>Google Analytics používame na analýzu návštevnosti a správania používateľov. Zhromažďované údaje sú anonymizované a slúžia len na štatistické účely. Viac informácií o spracovaní údajov Google nájdete na: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+                <p>Analýzu Google Analytics môžete zablokovať pomocou doplnku prehliadača: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out</a></p>
+
+                <h2>10. Zmeny zásad ochrany osobných údajov</h2>
+                <p>Vyhradzujeme si právo tieto zásady ochrany osobných údajov aktualizovať v prípade zmien v legislatíve alebo spôsobe spracovania údajov. Aktuálna verzia je vždy dostupná na tejto stránke. Dátum poslednej aktualizácie nájdete v záhlaví dokumentu.</p>
+
+                <h2>11. Kontakt</h2>
+                <p>Ak máte akékoľvek otázky týkajúce sa spracovania Vašich osobných údajov alebo chcete uplatniť svoje práva, kontaktujte nás:</p>
+                <p>
+                    <strong>E-mail:</strong> appapresov@gmail.com<br>
+                    <strong>Telefón:</strong> +421 944 462 420<br>
+                    <strong>Poštová adresa:</strong> Ateliér APPA s.r.o., Pionierska 442/24, 080 05 Prešov
+                </p>
             </div>
         </section>
     </main>
