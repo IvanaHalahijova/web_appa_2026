@@ -1,7 +1,9 @@
 // ---------------------------------------------
-// Inicializácia EmailJS — doplniť svoj public key (emailjs.init)
+// Inicializácia EmailJS — len ak je kniznica nacitana
 // ---------------------------------------------
-emailjs.init("u2e1FWy0epTab0AGB"); // Public key z EmailJS
+if (window.emailjs && typeof window.emailjs.init === "function") {
+    window.emailjs.init("u2e1FWy0epTab0AGB"); // Public key z EmailJS
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     // Debug overlay: odstránil som ho v produkcii
