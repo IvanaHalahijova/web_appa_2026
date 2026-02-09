@@ -238,6 +238,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // ---------------------------------------------
     // 🍪 Cookies Lišta
     // ---------------------------------------------
+    const GA_ID = "G-F7VFX4QJ81";
+    let analyticsLoaded = false;
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptButton = document.getElementById("accept-cookies");
     const cookieName = "appa_cookies_accepted";
@@ -261,6 +263,23 @@ document.addEventListener("DOMContentLoaded", function () {
     function getConsent() {
         try { const v = localStorage.getItem(cookieName); if (v !== null) return v; } catch (e) {}
         try { const m = document.cookie.match('(^|;)\\s*' + cookieName + '\\s*=\\s*([^;]+)'); return m ? decodeURIComponent(m[2]) : null; } catch (e) { return null; }
+    }
+
+    function loadAnalytics() {
+        if (analyticsLoaded) return;
+        analyticsLoaded = true;
+
+        const gaScript = document.createElement("script");
+        gaScript.async = true;
+        gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(gaScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ window.dataLayer.push(arguments); }
+        window.gtag = window.gtag || gtag;
+
+        window.gtag("js", new Date());
+        window.gtag("config", GA_ID, { anonymize_ip: true });
     }
 
     // Vývojárske testovacie nástroje: umožňujú spustiť automatizované testy pre súhlas
@@ -367,7 +386,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 } catch(e) { addDebug && addDebug('[cookie-debug] showCookieBanner debug error: ' + e); }
             } catch (e) { addDebug && addDebug('[cookie-debug] show style error: ' + e); }
-        } else { addDebug && addDebug('[cookie-debug] showCookieBanner: consent already set'); }
+        } else {
+            if (getConsent() === "true") loadAnalytics();
+            addDebug && addDebug('[cookie-debug] showCookieBanner: consent already set');
+        }
     }
 
     // Funkcia na skrytie lišty a uloženie súhlasu
@@ -376,6 +398,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function acceptAction(origin) {
             addDebug && addDebug('[cookie-debug] acceptAction triggered by ' + origin);
             try { setConsent('true'); } catch (err) { /* ignorovať */ }
+            loadAnalytics();
 
             if (cookieBanner) {
                 cookieBanner.classList.add("cookie-banner-hidden");
@@ -448,6 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Zobrazenie lišty po krátkej chvíli (na všetkých stránkach, ak ešte nie je súhlas)
     // Voláme viackrát ako fallback pre file:// prostredie (niekedy sa DOM alebo CSS spracuje neskôr)
+    if (getConsent() === "true") loadAnalytics();
     try { showCookieBanner(); } catch (e) {}
     setTimeout(showCookieBanner, 700);
     setTimeout(showCookieBanner, 1400);
