@@ -42,6 +42,9 @@ function openLightbox(projectName) {
     if (currentImages.length > 0) {
         modalTitle.textContent = projectName.replace(/_/g, ' ');
         showImage(currentImageIndex);
+        if (window.appaTrackEvent) {
+            window.appaTrackEvent("portfolio_open", { project: projectName });
+        }
         modal.show();
     }
 }

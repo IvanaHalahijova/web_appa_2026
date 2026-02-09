@@ -282,6 +282,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.gtag("config", GA_ID, { anonymize_ip: true });
     }
 
+    function trackEvent(eventName, params) {
+        if (getConsent() !== "true") return;
+        if (!analyticsLoaded) loadAnalytics();
+        if (window.gtag) {
+            window.gtag("event", eventName, params || {});
+        }
+    }
+
+    window.appaTrackEvent = trackEvent;
+
     // Vývojárske testovacie nástroje: umožňujú spustiť automatizované testy pre súhlas
     window.appaConsent = window.appaConsent || {};
     window.appaConsent.getConsent = getConsent;
@@ -556,5 +566,31 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         } catch (e) { console.warn('Cookie fallback error', e); addDebug && addDebug('[cookie-debug] Cookie fallback error: ' + e); }
     }, 1200);
+
+    // ---------------------------------------------
+    // Konverzie — trackovanie v GA4
+    // ---------------------------------------------
+    function bindConversionTracking() {
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                trackEvent("click_tel", { value: link.getAttribute('href') || "" });
+            });
+        });
+
+        document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                trackEvent("click_email", { value: link.getAttribute('href') || "" });
+            });
+        });
+
+        document.querySelectorAll('.btn-cta').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const label = (btn.textContent || "").trim();
+                trackEvent("click_cta", { label: label || "Chcem projekt" });
+            });
+        });
+    }
+
+    bindConversionTracking();
     
 });
