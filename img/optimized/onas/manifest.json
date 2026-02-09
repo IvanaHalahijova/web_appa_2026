@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-01-13T18:41:20.349Z",
+  "sizes": [
+    480,
+    768,
+    1200
+  ],
+  "formats": [
+    "webp",
+    "jpeg"
+  ],
+  "entries": {
+    "onas.jpeg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "onas-480.webp",
+        "skipped": false
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "onas-480.jpg",
+        "skipped": false
+      },
+      {
+        "size": 768,
+        "fmt": "webp",
+        "file": "onas-768.webp",
+        "skipped": false
+      },
+      {
+        "size": 768,
+        "fmt": "jpeg",
+        "file": "onas-768.jpg",
+        "skipped": false
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "onas-1200.webp",
+        "skipped": false
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "onas-1200.jpg",
+        "skipped": false
+      }
+    ]
+  }
+}

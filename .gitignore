@@ -1,9 +1,6 @@
 # Node modules and outputs
 node_modules/
 
-# Generated optimized images
-/img/optimized/
-
 # Editor folders
 .vscode/
 .DS_Store

@@ -1,0 +1,736 @@
+{
+  "generatedAt": "2026-02-03T08:31:14.614Z",
+  "sizes": [
+    480,
+    1200,
+    1800
+  ],
+  "formats": [
+    "webp",
+    "jpeg"
+  ],
+  "entries": {
+    "CH HORARSKA_5.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "CH HORARSKA_5-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "CH HORARSKA_5-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "CH HORARSKA_5-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "CH HORARSKA_5-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "CH HORARSKA_5-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "CH HORARSKA_5-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "CH HORARSKA_7.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "CH HORARSKA_7-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "CH HORARSKA_7-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "CH HORARSKA_7-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "CH HORARSKA_7-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "CH HORARSKA_7-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "CH HORARSKA_7-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "DD ASTROVÁ_4.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "DD ASTROVÁ_4-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "DD ASTROVÁ_4-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "DD ASTROVÁ_4-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "DD ASTROVÁ_4-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "DD ASTROVÁ_4-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "DD ASTROVÁ_4-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "IBV FNTCKNVLK_3.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "IBV FNTCKNVLK_3-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "IBV FNTCKNVLK_3-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "IBV FNTCKNVLK_3-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "IBV FNTCKNVLK_3-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "IBV FNTCKNVLK_3-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "IBV FNTCKNVLK_3-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "IBV FNTCNRCS_0.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "IBV FNTCNRCS_0-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "IBV FNTCNRCS_0-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "IBV FNTCNRCS_0-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "IBV FNTCNRCS_0-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "IBV FNTCNRCS_0-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "IBV FNTCNRCS_0-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "INT BARBERJC_08.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "INT BARBERJC_08-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "INT BARBERJC_08-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "INT BARBERJC_08-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "INT BARBERJC_08-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "INT BARBERJC_08-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "INT BARBERJC_08-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "INT BARBERJC_2.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "INT BARBERJC_2-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "INT BARBERJC_2-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "INT BARBERJC_2-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "INT BARBERJC_2-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "INT BARBERJC_2-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "INT BARBERJC_2-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "INT KOCISKO_10.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "INT KOCISKO_10-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "INT KOCISKO_10-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "INT KOCISKO_10-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "INT KOCISKO_10-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "INT KOCISKO_10-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "INT KOCISKO_10-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "INT KOCISKO_5.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "INT KOCISKO_5-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "INT KOCISKO_5-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "INT KOCISKO_5-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "INT KOCISKO_5-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "INT KOCISKO_5-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "INT KOCISKO_5-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "INT ZICH_13.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "INT ZICH_13-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "INT ZICH_13-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "INT ZICH_13-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "INT ZICH_13-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "INT ZICH_13-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "INT ZICH_13-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "INT ZICH_17.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "INT ZICH_17-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "INT ZICH_17-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "INT ZICH_17-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "INT ZICH_17-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "INT ZICH_17-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "INT ZICH_17-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "interier.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "interier-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "interier-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "interier-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "interier-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "interier-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "interier-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "OB FOREST_2.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "OB FOREST_2-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "OB FOREST_2-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "OB FOREST_2-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "OB FOREST_2-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "OB FOREST_2-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "OB FOREST_2-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "RD HACIK_3.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "RD HACIK_3-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "RD HACIK_3-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "RD HACIK_3-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "RD HACIK_3-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "RD HACIK_3-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "RD HACIK_3-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "RD JHSCKHNT_2.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "RD JHSCKHNT_2-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "RD JHSCKHNT_2-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "RD JHSCKHNT_2-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "RD JHSCKHNT_2-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "RD JHSCKHNT_2-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "RD JHSCKHNT_2-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "RD MAKOSKNT_5.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "RD MAKOSKNT_5-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "RD MAKOSKNT_5-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "RD MAKOSKNT_5-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "RD MAKOSKNT_5-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "RD MAKOSKNT_5-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "RD MAKOSKNT_5-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "RD MIKLUSSLGVK_6.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "RD MIKLUSSLGVK_6-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "RD MIKLUSSLGVK_6-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "RD MIKLUSSLGVK_6-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "RD MIKLUSSLGVK_6-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "RD MIKLUSSLGVK_6-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "RD MIKLUSSLGVK_6-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "RD POLIACEK_3.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "RD POLIACEK_3-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "RD POLIACEK_3-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "RD POLIACEK_3-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "RD POLIACEK_3-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "RD POLIACEK_3-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "RD POLIACEK_3-1800.jpg",
+        "skipped": true
+      }
+    ],
+    "RD TIVADAR_3.jpg": [
+      {
+        "size": 480,
+        "fmt": "webp",
+        "file": "RD TIVADAR_3-480.webp",
+        "skipped": true
+      },
+      {
+        "size": 480,
+        "fmt": "jpeg",
+        "file": "RD TIVADAR_3-480.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "webp",
+        "file": "RD TIVADAR_3-1200.webp",
+        "skipped": true
+      },
+      {
+        "size": 1200,
+        "fmt": "jpeg",
+        "file": "RD TIVADAR_3-1200.jpg",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "webp",
+        "file": "RD TIVADAR_3-1800.webp",
+        "skipped": true
+      },
+      {
+        "size": 1800,
+        "fmt": "jpeg",
+        "file": "RD TIVADAR_3-1800.jpg",
+        "skipped": true
+      }
+    ]
+  }
+}
