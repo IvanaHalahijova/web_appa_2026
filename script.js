@@ -1,7 +1,7 @@
 // ---------------------------------------------
 // Inicializácia EmailJS — doplniť svoj public key (emailjs.init)
 // ---------------------------------------------
-emailjs.init("TVOJ_PUBLIC_KEY"); // ← doplniť sem svoj public key
+emailjs.init("u2e1FWy0epTab0AGB"); // Public key z EmailJS
 
 document.addEventListener("DOMContentLoaded", function () {
     // Debug overlay: odstránil som ho v produkcii
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             submitBtn.textContent = "Odosiela sa...";
             submitBtn.disabled = true;
 
-            emailjs.sendForm("TVOJ_SERVICE_ID", "TVOJ_TEMPLATE_ID", this) // ← doplniť svoj SERVICE a TEMPLATE ID
+            emailjs.sendForm("service_oxs1c1t", "template_hpyfa8n", this) // EmailJS Service a Template ID
                 .then(() => {
                     showToast("Vaša správa bola úspešne odoslaná.");
                     this.reset();
