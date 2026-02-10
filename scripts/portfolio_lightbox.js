@@ -17,9 +17,29 @@ const projectImages = {
     "OB FOREST": ["OB FOREST_1", "OB FOREST_2", "OB FOREST_3", "OB FOREST_5", "OB FOREST_6"]
 };
 
+
 let currentProject = null;
 let currentImageIndex = 0;
 let currentImages = [];
+
+// Mapovanie technického názvu na pekný názov (z portfolia)
+const projectNames = {
+    "CH HORARSKA": "Chata Horárska, PO",
+    "RD HACIK": "Rodinný dom Svätý Kríž, LM",
+    "RD JHSCKHNT": "Prístavba k zrubu, HnT",
+    "RD MAKOSKNT": "Rodinný dom MT",
+    "RD MDZNY": "Rodinný dom Medzany, PO",
+    "RD MIKLUSSLGVK": "Rodinný dom Šalgovík, PO",
+    "RD POLIACEK": "Rodinný dom Sídlisko II., PO",
+    "RD TIVADAR": "Rodinný dom Pušovce, PO",
+    "DD ASTROVÁ": "Dvojdom Šalgovík, PO",
+    "IBV FNTCKNVLK": "IBV Fintice, PO",
+    "IBV FNTCNRCS": "IBV Fintice, PO",
+    "INT BARBERJC": "INT Barber Shop, SB",
+    "INT KOCISKO": "INT Centrum, PO",
+    "INT ZICH": "INT Centrum, PO",
+    "OB FOREST": "OB Forest, VT"
+};
 
 const modal = new bootstrap.Modal(document.getElementById('portfolioModal'));
 const lightboxImage = document.getElementById('lightboxImage');
@@ -38,9 +58,9 @@ function openLightbox(projectName) {
     currentProject = projectName;
     currentImages = projectImages[projectName] || [];
     currentImageIndex = 0;
-    
     if (currentImages.length > 0) {
-        modalTitle.textContent = projectName.replace(/_/g, ' ');
+        // Zosúladený názov projektu
+        modalTitle.innerHTML = `<span style="font-weight:700">${projectName}</span> <span style="color:#ff3c3c;font-weight:500;margin-left:12px">${projectNames[projectName] || projectName}</span>`;
         showImage(currentImageIndex);
         if (window.appaTrackEvent) {
             window.appaTrackEvent("portfolio_open", { project: projectName });
