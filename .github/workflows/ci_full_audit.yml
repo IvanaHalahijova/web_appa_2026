@@ -1,0 +1,60 @@
+name: Kompletný audit webu
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  html-link-validate:
+    name: Validácia HTML a odkazov
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install || true
+        working-directory: ./scripts
+      - name: Spusti link_and_validate.js
+        run: |
+          cd scripts
+          node link_and_validate.js
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: link_validation_report
+          path: reports/link_validation_report.json
+
+  lighthouse:
+    name: Lighthouse audit (SEO, accessibility, performance)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lighthouse
+        run: npm install -g lighthouse
+      - name: Spusti Lighthouse (produkcia)
+        run: |
+          lighthouse https://atelierappa.sk/ --output html --output-path ./lighthouse_report.html --quiet --chrome-flags="--headless"
+      - name: Upload Lighthouse report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse_report
+          path: lighthouse_report.html
+
+  image-optimization:
+    name: Kontrola optimalizácie obrázkov
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Skontroluj veľkosti obrázkov
+        run: |
+          find ./img/optimized -type f -size +500k -print > big_images.txt || true
+      - name: Upload zoznam veľkých obrázkov
+        uses: actions/upload-artifact@v4
+        with:
+          name: big_images
+          path: big_images.txt
