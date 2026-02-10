@@ -1,9 +1,40 @@
 @media (max-width: 991.98px) {
-    .navbar-collapse,
+    .navbar-collapse {
+        display: none !important;
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(17, 17, 17, 0.98);
+        padding: 0.5rem 0;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+        z-index: 1040;
+    }
     .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+        display: block !important;
+        visibility: visible;
+        pointer-events: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 90px;
+        max-height: 100vh;
+        z-index: 3000;
+    }
     .navbar-nav {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
+        padding: 0.5rem 0;
+    }
+    .navbar-nav .nav-item {
+        padding: 0.25rem 0;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem !important;
     }
 }
 /* Navigácia: správne zobrazenie hamburger menu len na mobile */
@@ -106,13 +137,14 @@ section {
 /* NAVIGÁCIA — štýly navigácie (upraviť podľa potreby) */
 .navbar {
     transition: all 0.4s ease;
-    background: transparent;
+    background-color: #0e0e0e !important;
     padding: 1rem 0;
-    z-index: 1000;
+    z-index: 1050;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 .navbar.scrolled {
-    background-color: var(--bg-color) !important;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    background-color: #0e0e0e !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 /* Oprava: Hamburger menu na mobile - fullscreen overlay, tmavé pozadie, vyšší z-index */
 
@@ -236,6 +268,34 @@ body.dark-theme .navbar .nav-link,
     z-index: 10;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
     max-width: 600px;
+    pointer-events: none;
+}
+.hero-text a,
+.hero-text button,
+.hero-text .btn {
+    pointer-events: auto;
+}
+/* Na malých obrazovkách posunúť text nahor, aby neprešiel cez navbar */
+@media (max-width: 576px) {
+    .hero-text {
+        bottom: 25%;
+        left: 5%;
+        max-width: 90%;
+    }
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 991.98px) {
+    .hero-text {
+        bottom: 20%;
+    }
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
 }
 .hero-text h1 {
     font-size: 2.8rem;
@@ -779,7 +839,7 @@ body.dark-theme footer a {
     .hero-text {
         left: 5%;
         bottom: 8%;
-        z-index: 1100;
+        z-index: 20;
     }
     .hero-text h1 {
         font-size: 2rem;
