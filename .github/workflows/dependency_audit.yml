@@ -1,0 +1,28 @@
+name: Dependency security audit
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  npm-audit:
+    name: NPM dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run npm audit
+        run: |
+          cd scripts
+          npm install || true
+          npm audit --audit-level=low --json > ../reports/npm_audit_report.json || true
+      - name: Upload npm audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm_audit_report
+          path: reports/npm_audit_report.json

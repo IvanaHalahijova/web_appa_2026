@@ -1,0 +1,27 @@
+name: Kontrola pravopisu (spellcheck)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  spellcheck:
+    name: Spellcheck audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install cspell
+        run: npm install -g cspell
+      - name: Run cspell na HTML a MD
+        run: cspell "**/*.{html,md}" --languageId=sk --no-progress --out spellcheck_report.txt || true
+      - name: Upload spellcheck report
+        uses: actions/upload-artifact@v4
+        with:
+          name: spellcheck_report
+          path: spellcheck_report.txt
