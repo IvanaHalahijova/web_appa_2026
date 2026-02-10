@@ -9,6 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Debug overlay: odstránil som ho v produkcii
 
     function addDebug() { /* ticho v produkcii */ }
+
+    // Oprava: explicitne spustiť hero carousel po načítaní stránky
+    const heroCarousel = document.getElementById('heroCarousel');
+    if (heroCarousel && typeof bootstrap !== 'undefined') {
+        const carouselInstance = bootstrap.Carousel.getOrCreateInstance(heroCarousel, {
+            interval: 6000,
+            ride: 'carousel',
+            pause: false,
+            wrap: true
+        });
+        carouselInstance.cycle();
+    }
     
     // ---------------------------------------------
     // Navigácia — efekt pri scrollovaní (chcem, aby sa meniť štýl pri scrollnutí)
