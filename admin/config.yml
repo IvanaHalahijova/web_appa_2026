@@ -7,6 +7,7 @@ backend:
   auth_endpoint: auth
   auth_scope: repo
   open_authoring: true
+  site_id: 67981faa-21ef-4bf2-b3af-1272ee6753e0
 
 site_url: https://atelierappa.sk
 site_id: 67981faa-21ef-4bf2-b3af-1272ee6753e0
