@@ -82,6 +82,24 @@ section {
     background-color: var(--bg-color) !important;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
+/* Oprava: Hamburger menu na mobile - fullscreen overlay, tmavé pozadie, vyšší z-index */
+@media (max-width: 991.98px) {
+    .navbar-collapse.show {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #111;
+        z-index: 1050;
+        padding-top: 80px; /* výška navbaru */
+        overflow-y: auto;
+    }
+    .navbar-collapse.show .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .navbar .nav-link {
     font-weight: 600;
     color: var(--hero-text-color) !important;
