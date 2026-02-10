@@ -1,0 +1,28 @@
+name: Kontrola broken images
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  broken-images:
+    name: Broken images audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install cheerio axios glob
+      - name: Check for broken images
+        run: |
+          node scripts/check_broken_images.js || true
+      - name: Upload broken images report
+        uses: actions/upload-artifact@v4
+        with:
+          name: broken_images_report
+          path: reports/broken_images_report.txt
