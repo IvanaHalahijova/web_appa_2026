@@ -1,0 +1,1 @@
+Testovací súbor na spustenie workflowov. Môžeš ho kedykoľvek zmazať.
