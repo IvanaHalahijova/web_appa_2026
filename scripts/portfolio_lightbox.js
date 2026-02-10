@@ -58,15 +58,15 @@ function openLightbox(projectName) {
     currentProject = projectName;
     currentImages = projectImages[projectName] || [];
     currentImageIndex = 0;
-    if (currentImages.length > 0) {
-        // Zosúladený názov projektu
-        modalTitle.innerHTML = `<span style="font-weight:700">${projectName}</span> <span style="color:#ff3c3c;font-weight:500;margin-left:12px">${projectNames[projectName] || projectName}</span>`;
-        showImage(currentImageIndex);
-        if (window.appaTrackEvent) {
-            window.appaTrackEvent("portfolio_open", { project: projectName });
+        if (currentImages.length > 0) {
+            // Zobraz len pekný názov projektu, rovnaký ako na karte
+            modalTitle.textContent = projectNames[projectName] || projectName;
+            showImage(currentImageIndex);
+            if (window.appaTrackEvent) {
+                window.appaTrackEvent("portfolio_open", { project: projectName });
+            }
+            modal.show();
         }
-        modal.show();
-    }
 }
 
 function showImage(index) {
