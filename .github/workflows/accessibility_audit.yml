@@ -1,0 +1,28 @@
+name: Accessibility audit (axe-core)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  axe:
+    name: Accessibility (axe-core)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install axe-core CLI
+        run: npm install -g @axe-core/cli
+      - name: Run axe on homepage
+        run: |
+          axe https://atelierappa.sk/ --save axe_report.html --exit
+      - name: Upload axe report
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe_accessibility_report
+          path: axe_report.html
