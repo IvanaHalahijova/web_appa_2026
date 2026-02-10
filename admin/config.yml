@@ -1,0 +1,39 @@
+backend:
+  name: github
+  repo: IvanaHalahijova/web_appa_2026
+  branch: master
+  site_domain: atelierappa.sk
+  base_url: https://api.github.com
+  auth_scope: repo
+  open_authoring: true
+media_folder: "/img/optimized/portfolio"
+publish_mode: editorial_workflow
+public_folder: "/img/optimized/portfolio"
+collections:
+  - name: "homepage"
+    label: "Hlavná stránka"
+    files:
+      - file: "index.html"
+        label: "Texty na hlavnej stránke"
+        name: "index"
+        fields:
+          - { label: "Hlavný nadpis", name: "hero_title", widget: "string" }
+          - { label: "Podnadpis", name: "hero_subtitle", widget: "string" }
+          - { label: "O nás - text", name: "about_text", widget: "text" }
+  - name: "portfolio"
+    label: "Portfólio projekty"
+    folder: "img/optimized/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Názov projektu", name: "title", widget: "string" }
+      - { label: "Popis", name: "description", widget: "text" }
+      - { label: "Obrázok", name: "image", widget: "image" }
+  - name: "onas"
+    label: "O nás sekcia"
+    files:
+      - file: "index.html"
+        label: "O nás texty"
+        name: "onas"
+        fields:
+          - { label: "Text sekcie O nás", name: "about_section", widget: "text" }
