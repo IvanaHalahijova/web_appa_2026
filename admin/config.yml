@@ -3,10 +3,12 @@ backend:
   name: github
   repo: IvanaHalahijova/web_appa_2026
   branch: master
-  site_domain: atelierappa.sk
-  base_url: https://api.github.com
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
   auth_scope: repo
   open_authoring: true
+
+site_url: https://atelierappa.sk
 
 media_folder: "/img/optimized/portfolio"
 public_folder: "/img/optimized/portfolio"
