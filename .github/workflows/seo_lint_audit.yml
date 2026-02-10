@@ -1,0 +1,27 @@
+name: SEO lint audit
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  seo-lint:
+    name: SEO linting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install seo-lint
+        run: npm install -g seo-lint
+      - name: Run seo-lint na index.html
+        run: seo-lint index.html --output-file seo_lint_report.txt || true
+      - name: Upload SEO lint report
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo_lint_report
+          path: seo_lint_report.txt
