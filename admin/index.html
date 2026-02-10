@@ -9,5 +9,24 @@
 <body>
   <div id="nc-root"></div>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Pridať odkaz na reset hesla pod login formulár
+    window.addEventListener('DOMContentLoaded', function() {
+      var observer = new MutationObserver(function() {
+        var loginForm = document.querySelector('form[autocomplete="on"]');
+        if (loginForm && !document.getElementById('forgot-password-link')) {
+          var forgot = document.createElement('a');
+          forgot.href = 'https://atelierappa.sk/.netlify/identity/password';
+          forgot.textContent = 'Zabudnuté heslo?';
+          forgot.id = 'forgot-password-link';
+          forgot.style.display = 'block';
+          forgot.style.margin = '16px auto';
+          forgot.style.textAlign = 'center';
+          loginForm.parentNode.insertBefore(forgot, loginForm.nextSibling);
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
 </body>
 </html>
