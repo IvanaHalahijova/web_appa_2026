@@ -1,0 +1,31 @@
+name: HTML & Link Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./scripts
+        continue-on-error: true
+      - name: Run link and HTML validation
+        run: |
+          cd scripts
+          node link_and_validate.js
+        continue-on-error: false
+      - name: Upload validation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: link_validation_report
+          path: reports/link_validation_report.json
