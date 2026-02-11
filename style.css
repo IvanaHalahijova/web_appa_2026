@@ -7,7 +7,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background-color: rgba(17, 17, 17, 0.98);
+        background-color: transparent !important;
         padding: 0.5rem 0;
         max-height: calc(100vh - 70px);
         overflow-y: auto;
@@ -26,6 +26,16 @@
         padding-top: 90px;
         max-height: 100vh;
         z-index: 3000;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+    .navbar.scrolled .navbar-collapse {
+        background-color: rgba(17, 17, 17, 0.98) !important;
+    }
+    .navbar.scrolled .navbar-collapse.show,
+    .navbar.scrolled .navbar-collapse.collapsing {
+        background-color: rgba(17, 17, 17, 0.98) !important;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.3) !important;
     }
     .navbar-nav {
         padding: 0.5rem 0;
@@ -137,7 +147,7 @@ section {
 /* NAVIGÁCIA — štýly navigácie (upraviť podľa potreby) */
 .navbar {
     transition: all 0.4s ease;
-    background-color: #0e0e0e !important;
+    background-color: transparent !important;
     padding: 1rem 0;
     z-index: 1050;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
