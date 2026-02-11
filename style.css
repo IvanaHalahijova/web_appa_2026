@@ -18,13 +18,12 @@
         display: block !important;
         visibility: visible;
         pointer-events: auto;
-        position: fixed;
-        top: 0;
+        position: absolute;
+        top: 100%;
         left: 0;
         right: 0;
-        bottom: 0;
-        padding-top: 90px;
-        max-height: 100vh;
+        padding: 1rem 0;
+        max-height: calc(100vh - 70px);
         z-index: 3000;
         background-color: transparent !important;
         box-shadow: none !important;
@@ -149,7 +148,7 @@ section {
     transition: all 0.4s ease;
     background-color: transparent !important;
     padding: 1rem 0;
-    z-index: 1050;
+    z-index: 4000;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 .navbar.scrolled {
