@@ -897,9 +897,19 @@ body.dark-theme footer a {
     #cookie-banner .cookie-text {
         font-size: 0.85rem !important;
     }
+    #cookie-banner .cookie-actions {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
     #cookie-banner .btn {
         font-size: 0.8rem !important;
         padding: 0.35rem 0.75rem !important;
+        min-width: 110px;
+        box-sizing: border-box;
     }
 }
 
