@@ -149,7 +149,7 @@ section {
     background-color: transparent !important;
     padding: 1rem 0;
     z-index: 4000;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: none !important;
 }
 .navbar.scrolled {
     background-color: #0e0e0e !important;
