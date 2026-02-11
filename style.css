@@ -898,18 +898,30 @@ body.dark-theme footer a {
         font-size: 0.85rem !important;
     }
     #cookie-banner .cookie-actions {
-        flex-basis: 100%;
         display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
+        flex-direction: row;
+        gap: 6px;
         margin-top: 10px;
         justify-content: flex-start;
+        width: 100%;
     }
     #cookie-banner .btn {
         font-size: 0.8rem !important;
-        padding: 0.35rem 0.75rem !important;
-        min-width: 110px;
+        padding: 0.35rem 0.65rem !important;
+        min-width: 90px;
         box-sizing: border-box;
+        flex: 1 1 0;
+        max-width: 48%;
+    }
+    /* Ak je extrémne málo miesta, zalomiť pod seba */
+    @media (max-width: 370px) {
+        #cookie-banner .cookie-actions {
+            flex-direction: column;
+            gap: 6px;
+        }
+        #cookie-banner .btn {
+            max-width: 100%;
+        }
     }
 }
 
