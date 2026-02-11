@@ -56,12 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navLinks && navbarToggler && navbarCollapse) {
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // Ak je navbar otvorený (má show class), zavrieme ho
                 if (navbarCollapse.classList.contains('show')) {
                     navbarToggler.click();
                 }
             });
         });
+        // Pridaj aj pre tlačidlo "Chcem projekt"
+        const ctaBtn = document.querySelector('.btn-cta');
+        if (ctaBtn) {
+            ctaBtn.addEventListener('click', () => {
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        }
     }
 
     // ---------------------------------------------
