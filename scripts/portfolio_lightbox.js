@@ -41,10 +41,12 @@ const projectNames = {
     "OB FOREST": "OB Forest, VT"
 };
 
-const modal = new bootstrap.Modal(document.getElementById('portfolioModal'));
+const modalEl = document.getElementById('portfolioModal');
+const modal = new bootstrap.Modal(modalEl);
 const lightboxImage = document.getElementById('lightboxImage');
 const imageCounter = document.getElementById('imageCounter');
 const modalTitle = document.getElementById('portfolioModalLabel');
+const mainNavbar = document.querySelector('.navbar.fixed-top');
 
 // Open lightbox when clicking on project card
 document.querySelectorAll('.portfolio-project-card').forEach(card => {
@@ -52,6 +54,17 @@ document.querySelectorAll('.portfolio-project-card').forEach(card => {
         const projectName = this.getAttribute('data-project');
         openLightbox(projectName);
     });
+});
+
+// Force hide navbar when modal is shown, show it when hidden
+modalEl.addEventListener('show.bs.modal', () => {
+    setTimeout(() => {
+        if (mainNavbar) mainNavbar.style.setProperty('display', 'none', 'important');
+    }, 50);
+});
+
+modalEl.addEventListener('hidden.bs.modal', () => {
+    if (mainNavbar) mainNavbar.style.removeProperty('display');
 });
 
 function openLightbox(projectName) {
