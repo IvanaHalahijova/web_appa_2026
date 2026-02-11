@@ -26,23 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
     // Navigácia — efekt pri scrollovaní (chcem, aby sa meniť štýl pri scrollnutí)
     // ---------------------------------------------
     const navbar = document.querySelector(".navbar");
-    // Zistí, či sme na podstránke (kde navigačné pozadie má byť viditeľné hneď)
-    const isPortfolioPage = document.body.classList.contains('portfolio-body'); 
+    const isSubPage = document.body.classList.contains('portfolio-body') || document.body.classList.contains('gdpr-body');
 
-    if (isPortfolioPage) {
-        // Ak sme na podstránke (Portfólio, GDPR), aplikujeme "scrolled" štýl hneď
-        navbar.classList.add("scrolled");
-        navbar.classList.add("portfolio-page-nav"); 
+    function handleNavScroll() {
+        if (isSubPage) {
+            navbar.classList.add("scrolled");
+        } else {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        }
     }
 
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-        } else if (!isPortfolioPage) {
-            // Ak je Hero sekcia na vrchu (iba na indexe), odstránime scrolled štýl
-            navbar.classList.remove("scrolled");
-        }
-    });
+    // Apply on load
+    handleNavScroll();
+    
+    // Apply on scroll
+    window.addEventListener("scroll", handleNavScroll);
 
     // ---------------------------------------------
     // Automatické zatvorenie navbar po kliknutí na link (mobile)
