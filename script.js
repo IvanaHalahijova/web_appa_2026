@@ -1,4 +1,6 @@
 // ---------------------------------------------
+// Bezpečná detekcia portfolio stránky (podľa URL alebo default false)
+var isPortfolioPage = window.location.pathname.includes('portfolio');
 // Inicializácia EmailJS — len ak je kniznica nacitana
 // ---------------------------------------------
 if (window.emailjs && typeof window.emailjs.init === "function") {
