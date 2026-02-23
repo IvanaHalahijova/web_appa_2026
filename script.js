@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ---------------------------------------------
     // 🍪 Cookies Lišta
     // ---------------------------------------------
-    const GA_ID = "G-F7VFX4QJ81";
+    const GA_ID = "G-F7VEX4Q3B1";
     let analyticsLoaded = false;
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptButton = document.getElementById("accept-cookies");
