@@ -110,3 +110,44 @@ document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') modal.hide();
     }
 });
+
+// Touch/Swipe navigation for mobile
+let touchStartX = 0;
+let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
+
+const lightboxContainer = document.querySelector('.modal-body');
+
+if (lightboxContainer) {
+    lightboxContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    lightboxContainer.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        handleSwipe();
+    }, { passive: true });
+}
+
+function handleSwipe() {
+    const modalElement = document.getElementById('portfolioModal');
+    if (!modalElement.classList.contains('show')) return;
+    
+    const swipeThreshold = 50; // minimálna vzdialenosť pre swipe
+    const diffX = touchEndX - touchStartX;
+    const diffY = touchEndY - touchStartY;
+    
+    // Kontrola či je to horizontálny swipe (nie vertikálny scroll)
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > swipeThreshold) {
+        if (diffX > 0) {
+            // Swipe doprava → predchádzajúci obrázok
+            showImage(currentImageIndex - 1);
+        } else {
+            // Swipe doľava → ďalší obrázok
+            showImage(currentImageIndex + 1);
+        }
+    }
+}
