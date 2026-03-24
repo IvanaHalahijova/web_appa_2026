@@ -4,7 +4,7 @@ var isPortfolioPage = window.location.pathname.includes('portfolio');
 // Inicializácia EmailJS — len ak je kniznica nacitana
 // ---------------------------------------------
 if (window.emailjs && typeof window.emailjs.init === "function") {
-    window.emailjs.init("u2e1FWy0epTab0AGB"); // Public key z EmailJS
+    window.emailjs.init({ publicKey: "u2e1FWy0epTab0AGB" }); // Public key z EmailJS (v4 syntax)
 }
 
 document.addEventListener("DOMContentLoaded", function () {
